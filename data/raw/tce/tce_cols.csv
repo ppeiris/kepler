@@ -1,0 +1,239 @@
+# This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu
+# Tue Jan  3 21:02:35 2017
+#
+# Data Column description
+# http://exoplanetarchive.ipac.caltech.edu/docs/API_tce_columns.html
+#
+################################################################################
+# row 'data' is very important, this will be the colname
+data
+################################################################################
+#  Target Labels and Flags
+################################################################################
+# COLUMN kepid:          KepID
+# COLUMN tce_plnt_num:   Planet Number
+# COLUMN tce_delivname:  Delivery Name
+# COLUMN rowupdate:      Date of Last Update
+# COLUMN tce_datalink_dvs: Link to DV Summary
+# COLUMN tce_datalink_dvr: Link to DV Report
+
+
+################################################################################
+#  Transit Fit Parameters
+################################################################################
+COLUMN tce_period:     Orbital Period [days]
+# COLUMN tce_period_err: Orbital Period Unc. [days]
+# COLUMN tce_time0bk:    Transit Epoch [BKJD]
+# COLUMN tce_time0bk_err: Transit Epoch Unc. [BKJD]
+# COLUMN tce_time0:      Transit Epoch [BJD]
+# COLUMN tce_time0_err:  Transit Epoch Unc. [BJD]
+COLUMN tce_ror:        Planet-Star Radius Ratio
+# COLUMN tce_ror_err:    Planet-Star Radius Ratio Unc.
+COLUMN tce_dor:        Planet-Star Distance over Star Radius
+# COLUMN tce_dor_err:    Planet-Star Distance over Star Radius Unc.
+COLUMN tce_incl:       Inclination [deg]
+# COLUMN tce_incl_err:   Inclination Unc. [deg]
+COLUMN tce_impact:     Impact Parameter
+# COLUMN tce_impact_err: Impact Parameter Unc.
+COLUMN tce_duration:   Transit Duration [hrs]
+# COLUMN tce_duration_err: Transit Duration Unc. [hrs]
+COLUMN tce_ingress:    Ingress Duration [hrs]
+# COLUMN tce_ingress_err: Ingress Duration Unc. [hrs]
+COLUMN tce_depth:      Transit Depth [ppm]
+# COLUMN tce_depth_err:  Transit Depth Unc. [ppm]
+COLUMN tce_eccen:      Eccentricity
+# COLUMN tce_eccen_err:  Eccentricity  Unc.
+COLUMN tce_longp:      Long. of Periastron [deg]
+# COLUMN tce_longp_err:  Long. of Periastron Unc. [deg]
+# COLUMN tce_limbdark_mod: Limb Darkening Model
+COLUMN tce_ldm_coeff1: Limb Darkening Coeff. 1
+COLUMN tce_ldm_coeff2: Limb Darkening Coeff. 2
+COLUMN tce_ldm_coeff3: Limb Darkening Coeff. 3
+COLUMN tce_ldm_coeff4: Limb Darkening Coeff. 4
+# COLUMN tce_num_transits: Number of Transits
+# COLUMN tce_trans_mod:  Transit Model
+# COLUMN tce_full_conv:  Full Convergence Flag
+COLUMN tce_model_snr:  Transit Signal-to-Noise (SNR)
+COLUMN tce_model_chisq: Chi-Square
+# COLUMN tce_model_dof:  Degrees of Freedom
+COLUMN tce_robstat:    Robust Statistic
+# COLUMN tce_dof1:       Degrees of Freedom 1
+# COLUMN tce_dof2:       Degrees of Freedom 2
+COLUMN tce_chisq1:     Chi-Square 1
+COLUMN tce_chisq2:     Chi-Square 2
+COLUMN tce_chisqgofdof: Chi-Square GOF DOF
+COLUMN tce_chisqgof:   Chi-Square GOF
+
+
+################################################################################
+#  Scaled Planetary Parameters
+################################################################################
+COLUMN tce_prad:       Planetary Radius [Earth radii]
+# COLUMN tce_prad_err:   Planetary Radius Unc. [Earth radii]
+COLUMN tce_sma:        Orbit Semi-Major Axis [AU]
+# COLUMN tce_sma_err:    Orbit Semi-Major Axis Unc. [AU]
+COLUMN tce_eqt:        Equilibrium Temperature [K]
+# COLUMN tce_eqt_err:    Equilibrium Temperature Unc. [K]
+COLUMN tce_insol:      Insolation Flux [Earth flux]
+# COLUMN tce_insol_err:  Insolation Flux [Earth flux]
+
+
+################################################################################
+#  Stellar Parameters
+################################################################################
+# COLUMN tce_nkoi:       Number of Associated KOIs
+# COLUMN tce_ioflag:     Interesting Object Flag
+# COLUMN tce_quarters:   Quarters Observed
+COLUMN tce_steff:      Stellar Effective Temperature [K]
+# COLUMN tce_steff_err:  Stellar Effective Temperature Unc. [K]
+COLUMN tce_slogg:      Stellar Surface Gravity [log10(cm/s**2)]
+# COLUMN tce_slogg_err:  Stellar Surface Gravity Unc. [log10(cm/s**2)]
+COLUMN tce_smet:       Stellar Metallicity [dex]
+# COLUMN tce_smet_err:   Stellar Metallicity Unc. [dex]
+COLUMN tce_sradius:    Stellar Radius [Solar radii]
+# COLUMN tce_sradius_err: Stellar Radius Unc. [Solar radii]
+# COLUMN tce_steff_prov: Stellar Effective Temperature Provenance
+# COLUMN tce_slogg_prov: Stellar Surface Gravity Provenance
+# COLUMN tce_smet_prov:  Stellar Metallicity Provenance
+# COLUMN tce_sradius_prov: Stellar Radius Provenance
+
+
+################################################################################
+# Trapezoidal Fit Parameters
+################################################################################
+# COLUMN tcet_period:    Orbital Period [days]
+# COLUMN tcet_period_err: Orbital Period Unc. [days]
+# COLUMN tcet_time0bk:   Transit Epoch [BKJD]
+# COLUMN tcet_time0bk_err: Transit Epoch Unc. [BKJD]
+# COLUMN tcet_time0:     Transit Epoch [BJD]
+# COLUMN tcet_time0_err: Transit Epoch Unc. [BJD]
+# COLUMN tcet_duration:  Transit Duration [hrs]
+# COLUMN tcet_duration_err: Transit Duration Unc. [hrs]
+# COLUMN tcet_ingress:   Ingress Duration [hrs]
+# COLUMN tcet_ingress_err: Ingress Duration Unc. [hrs]
+# COLUMN tcet_depth:     Transit Depth [ppm]
+# COLUMN tcet_depth_err: Transit Depth Unc. [ppm]
+# COLUMN tcet_full_conv: Full Convergence Flag
+COLUMN tcet_model_chisq: Chi-Square
+
+
+
+################################################################################
+# Weak Secondary Test
+################################################################################
+# COLUMN tcet_model_dof: Degrees of Freedom
+# COLUMN wst_robstat:    Weak Secondary Robust Statistic
+# COLUMN wst_depth:      Weak Secondary Depth
+# COLUMN tce_mesmedian:  Weak Secondary Median MES
+# COLUMN tce_mesmad:     Weak Secondary MAD-MES
+# COLUMN tce_maxmes:     Weak Secondary Max MES
+# COLUMN tce_minmes:     Weak Secondary Min MES
+# COLUMN tce_maxmesd:    Weak Secondary Max MES Phase
+# COLUMN tce_minmesd:    Weak Secondary Min MES Phase
+
+
+################################################################################
+# Light Curve-Based KOI Vetting Statistics
+################################################################################
+COLUMN tce_max_sngle_ev: Single Event Statistic
+COLUMN tce_max_mult_ev: Multiple Event Statistic (MES)
+COLUMN tce_bin_oedp_stat: Odd-Even Depth Comparison Statistic
+COLUMN tce_rmesmad:    Calculated Ratio MES over MAD MES
+COLUMN tce_rsnrmes:    Calculated Ratio SNR over MES
+COLUMN tce_rminmes:    Calculated Ratio Min. MES over MES
+
+
+################################################################################
+# Secondary Event Results
+################################################################################
+# COLUMN tce_albedo:     Secondary Geometric Albedo
+# COLUMN tce_albedo_err: Secondary Geometric Albedo Unc.
+# COLUMN tce_ptemp:      Planet Effective Temperature [K]
+# COLUMN tce_ptemp_err:  Planet Effective Temperature Unc. [K]
+# COLUMN tce_albedo_stat: Albedo Comparison Statistic
+# COLUMN tce_ptemp_stat: Effective Temperature Comparison Statistic
+
+
+################################################################################
+# Autovetter Parameters
+################################################################################
+# COLUMN av_vf_pc:       Autovetter Planet Candidate Vote Fraction [percentage]
+# COLUMN av_vf_pc_err:   Autovetter Planet Candidate Vote Fraction Unc. [percentage]
+# COLUMN av_vf_afp:      Autovetter Astrophysical False Positive Vote Fraction [percentage]
+# COLUMN av_vf_afp_err:  Autovetter Astrophysical False Positive Vote Fraction Unc. [percentage]
+# COLUMN av_vf_ntp:      Autovetter Non Transiting Phenomena Vote Fraction [percentage]
+# COLUMN av_vf_ntp_err:  Autovetter Non Transiting Phenomena Vote Fraction Unc. [percentage]
+# COLUMN av_pp_pc:       Autovetter Planet Candidate Posterior Probabilities [percentage]
+# COLUMN av_pp_afp:      Autovetter Astrophysical False Positive Posterior Probabilities [percentage]
+# COLUMN av_pp_ntp:      Autovetter Non Transiting Phenomena Posterior Probabilities [percentage]
+# COLUMN av_training_set: Autovetter Training Set Label
+# COLUMN av_pred_class:  Autovetter Predicted Classification
+
+
+################################################################################
+# Bootstrap Statistics
+################################################################################
+COLUMN boot_fap:       Bootstrap False Alarm Probability
+COLUMN boot_mesthresh: Bootstrap MES Threshold
+COLUMN boot_mesmean:   Bootstrap Mean of MES Distribution
+COLUMN boot_messtd:    Bootstrap Standard Deviation of MES Distribution
+
+
+################################################################################
+# Ghost Diagnostic
+################################################################################
+COLUMN tce_cap_stat:   Ghost Core Aperture Statistic
+COLUMN tce_hap_stat:   Ghost Halo Aperture Statistic
+
+
+################################################################################
+# Rolling Band Contamination Histogram
+################################################################################
+COLUMN tce_rb_tpdur:   Test Pulse Duration
+# COLUMN tce_rb_tcount0: Transit Counts 0
+# COLUMN tce_rb_tcount1: Transit Counts 1
+# COLUMN tce_rb_tcount2: Transit Counts 2
+# COLUMN tce_rb_tcount3: Transit Counts 3
+# COLUMN tce_rb_tcount4: Transit Counts 4
+
+
+################################################################################
+#  Pixel-Based KOI Vetting Statisics
+################################################################################
+# COLUMN tce_fwm_stat:   FW Offset Significance
+# COLUMN tce_fwm_sra:    FW Source &alpha;(OOT) [hrs]
+# COLUMN tce_fwm_sra_err: FW Source &alpha;(OOT) Unc. [hrs]
+# COLUMN tce_fwm_sdec:   FW Source &delta;(OOT) [deg]
+# COLUMN tce_fwm_sdec_err: FW Source &delta;(OOT) Unc. [deg]
+# COLUMN tce_fwm_srao:   FW Source &Delta;&alpha;(OOT) [sec]
+# COLUMN tce_fwm_srao_err: FW Source &Delta;&alpha;(OOT) Unc. [sec]
+# COLUMN tce_fwm_sdeco:  FW Source &Delta;&delta;(OOT) [arcsec]
+# COLUMN tce_fwm_sdeco_err: FW Source &Delta;&delta;(OOT) Unc. [arcsec]
+# COLUMN tce_fwm_prao:   FW &Delta;&alpha;(OOT) [sec]
+# COLUMN tce_fwm_prao_err: FW &Delta;&alpha;(OOT) Unc. [sec]
+# COLUMN tce_fwm_pdeco:  FW &Delta;&delta;(OOT) [arcsec]
+# COLUMN tce_fwm_pdeco_err: FW &Delta;&delta;(OOT) Unc. [arcsec]
+# COLUMN tce_dicco_mra:  PRF &Delta;&alpha;<sub>MQ</sub>(OOT) [arcsec]
+# COLUMN tce_dicco_mra_err: PRF &Delta;&alpha;<sub>MQ</sub>(OOT) Unc. [arcsec]
+# COLUMN tce_dicco_mdec: PRF &Delta;&delta;<sub>MQ</sub>(OOT) [arcsec]
+# COLUMN tce_dicco_mdec_err: PRF &Delta;&delta;<sub>MQ</sub>(OOT) Unc. [arcsec]
+# COLUMN tce_dicco_msky: PRF &Delta;&theta;<sub>MQ</sub>(OOT) [arcsec]
+# COLUMN tce_dicco_msky_err: PRF &Delta;&theta;<sub>MQ</sub>(OOT) Unc. [arcsec]
+# COLUMN tce_dicco_fra:  PRF &Delta;&alpha;<sub>SQ</sub>(OOT) [arcsec]
+# COLUMN tce_dicco_fra_err: PRF &Delta;&alpha;<sub>SQ</sub>(OOT) Unc. [arcsec]
+# COLUMN tce_dicco_fdec: PRF &Delta;&delta;<sub>SQ</sub>(OOT) [arcsec]
+# COLUMN tce_dicco_fdec_err: PRF &Delta;&delta;<sub>SQ</sub>(OOT) Unc. [arcsec]
+# COLUMN tce_dicco_fsky: PRF &Delta;&theta;<sub>SQ</sub>(OOT) [arcsec]
+# COLUMN tce_dicco_fsky_err: PRF &Delta;&theta;<sub>SQ</sub>(OOT) Unc. [arcsec]
+# COLUMN tce_dikco_mra:  PRF &Delta;&alpha;<sub>MQ</sub>(KIC) [arcsec]
+# COLUMN tce_dikco_mra_err: PRF &Delta;&alpha;<sub>MQ</sub>(KIC) Unc. [arcsec]
+# COLUMN tce_dikco_mdec: PRF &Delta;&delta;<sub>MQ</sub>(KIC) [arcsec]
+# COLUMN tce_dikco_mdec_err: PRF &Delta;&delta;<sub>MQ</sub>(KIC) Unc. [arcsec]
+# COLUMN tce_dikco_msky: PRF &Delta;&theta;<sub>MQ</sub>(KIC) [arcsec]
+# COLUMN tce_dikco_msky_err: PRF &Delta;&theta;<sub>MQ</sub>(KIC) Unc. [arcsec]
+# COLUMN tce_dikco_fra:  PRF &Delta;&alpha;<sub>SQ</sub>(KIC) [arcsec]
+# COLUMN tce_dikco_fra_err: PRF &Delta;&alpha;<sub>SQ</sub>(KIC) Unc. [arcsec]
+# COLUMN tce_dikco_fdec: PRF &Delta;&delta;<sub>SQ</sub>(KIC) [arcsec]
+# COLUMN tce_dikco_fdec_err: PRF &Delta;&delta;<sub>SQ</sub>(KIC) Unc. [arcsec]
+# COLUMN tce_dikco_fsky: PRF &Delta;&theta;<sub>SQ</sub>(KIC) [arcsec]
+# COLUMN tce_dikco_fsky_err: PRF &Delta;&theta;<sub>SQ</sub>(KIC) Unc. [arcsec]
