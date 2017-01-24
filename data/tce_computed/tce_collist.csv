@@ -1,0 +1,55 @@
+parameter,description,units
+kepid,          KepID,
+tce_period,     Orbital Period ,days
+tce_ror,        Planet-Star Radius Ratio,
+tce_dor,        Planet-Star Distance over Star Radius,
+tce_incl,       Inclination ,deg
+tce_impact,     Impact Parameter,
+tce_duration,   Transit Duration ,hrs
+tce_ingress,    Ingress Duration ,hrs
+tce_depth,      Transit Depth ,ppm
+tce_eccen,      Eccentricity,
+tce_longp,      Long. of Periastron ,deg
+tce_ldm_coeff1, Limb Darkening Coeff. 1,
+tce_ldm_coeff2, Limb Darkening Coeff. 2,
+tce_ldm_coeff3, Limb Darkening Coeff. 3,
+tce_ldm_coeff4, Limb Darkening Coeff. 4,
+tce_model_snr,  Transit Signal-to-Noise (SNR),
+tce_model_chisq, Chi-Square,
+tce_robstat,    Robust Statistic,
+tce_chisq1,     Chi-Square 1,
+tce_chisq2,     Chi-Square 2,
+tce_chisqgofdof, Chi-Square GOF DOF,
+tce_chisqgof,   Chi-Square GOF,
+tce_prad,       Planetary Radius ,Earth radii
+tce_sma,        Orbit Semi-Major Axis ,AU
+tce_eqt,        Equilibrium Temperature ,K
+tce_insol,      Insolation Flux ,Earth flux
+tce_steff,      Stellar Effective Temperature ,K
+tce_slogg,      Stellar Surface Gravity ,log10(cm/s**2)
+tce_smet,       Stellar Metallicity ,dex
+tce_sradius,    Stellar Radius ,Solar radii
+tcet_period,    Orbital Period ,days
+tcet_model_chisq, Chi-Square,
+wst_depth,      Weak Secondary Depth,
+tce_mesmedian,  Weak Secondary Median MES,
+tce_mesmad,     Weak Secondary MAD-MES,
+tce_maxmes,     Weak Secondary Max MES,
+tce_minmes,     Weak Secondary Min MES,
+tce_maxmesd,    Weak Secondary Max MES Phase,
+tce_minmesd,    Weak Secondary Min MES Phase,
+tce_max_sngle_ev, Single Event Statistic,
+tce_max_mult_ev, Multiple Event Statistic (MES),
+tce_bin_oedp_stat, Odd-Even Depth Comparison Statistic,
+tce_rmesmad,    Calculated Ratio MES over MAD MES,
+tce_rsnrmes,    Calculated Ratio SNR over MES,
+tce_rminmes,    Calculated Ratio Min. MES over MES,
+av_training_set, Autovetter Training Set Label,
+av_pred_class,  Autovetter Predicted Classification,
+boot_fap,       Bootstrap False Alarm Probability,
+boot_mesthresh, Bootstrap MES Threshold,
+boot_mesmean,   Bootstrap Mean of MES Distribution,
+boot_messtd,    Bootstrap Standard Deviation of MES Distribution,
+tce_cap_stat,   Ghost Core Aperture Statistic,
+tce_hap_stat,   Ghost Halo Aperture Statistic,
+tce_rb_tpdur,   Test Pulse Duration,

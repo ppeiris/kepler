@@ -10,7 +10,7 @@ data
 ################################################################################
 #  Target Labels and Flags
 ################################################################################
-# COLUMN kepid:          KepID
+COLUMN kepid:          KepID
 # COLUMN tce_plnt_num:   Planet Number
 # COLUMN tce_delivname:  Delivery Name
 # COLUMN rowupdate:      Date of Last Update
@@ -101,7 +101,7 @@ COLUMN tce_sradius:    Stellar Radius [Solar radii]
 ################################################################################
 # Trapezoidal Fit Parameters
 ################################################################################
-# COLUMN tcet_period:    Orbital Period [days]
+COLUMN tcet_period:    Orbital Period [days]
 # COLUMN tcet_period_err: Orbital Period Unc. [days]
 # COLUMN tcet_time0bk:   Transit Epoch [BKJD]
 # COLUMN tcet_time0bk_err: Transit Epoch Unc. [BKJD]
@@ -115,21 +115,21 @@ COLUMN tce_sradius:    Stellar Radius [Solar radii]
 # COLUMN tcet_depth_err: Transit Depth Unc. [ppm]
 # COLUMN tcet_full_conv: Full Convergence Flag
 COLUMN tcet_model_chisq: Chi-Square
+# COLUMN tcet_model_dof: Degrees of Freedom
 
 
 
 ################################################################################
 # Weak Secondary Test
 ################################################################################
-# COLUMN tcet_model_dof: Degrees of Freedom
 # COLUMN wst_robstat:    Weak Secondary Robust Statistic
-# COLUMN wst_depth:      Weak Secondary Depth
-# COLUMN tce_mesmedian:  Weak Secondary Median MES
-# COLUMN tce_mesmad:     Weak Secondary MAD-MES
-# COLUMN tce_maxmes:     Weak Secondary Max MES
-# COLUMN tce_minmes:     Weak Secondary Min MES
-# COLUMN tce_maxmesd:    Weak Secondary Max MES Phase
-# COLUMN tce_minmesd:    Weak Secondary Min MES Phase
+COLUMN wst_depth:      Weak Secondary Depth
+COLUMN tce_mesmedian:  Weak Secondary Median MES
+COLUMN tce_mesmad:     Weak Secondary MAD-MES
+COLUMN tce_maxmes:     Weak Secondary Max MES
+COLUMN tce_minmes:     Weak Secondary Min MES
+COLUMN tce_maxmesd:    Weak Secondary Max MES Phase
+COLUMN tce_minmesd:    Weak Secondary Min MES Phase
 
 
 ################################################################################
@@ -146,12 +146,12 @@ COLUMN tce_rminmes:    Calculated Ratio Min. MES over MES
 ################################################################################
 # Secondary Event Results
 ################################################################################
-# COLUMN tce_albedo:     Secondary Geometric Albedo
-# COLUMN tce_albedo_err: Secondary Geometric Albedo Unc.
-# COLUMN tce_ptemp:      Planet Effective Temperature [K]
-# COLUMN tce_ptemp_err:  Planet Effective Temperature Unc. [K]
-# COLUMN tce_albedo_stat: Albedo Comparison Statistic
-# COLUMN tce_ptemp_stat: Effective Temperature Comparison Statistic
+#COLUMN tce_albedo:     Secondary Geometric Albedo
+#COLUMN tce_albedo_err: Secondary Geometric Albedo Unc.
+#COLUMN tce_ptemp:      Planet Effective Temperature [K]
+#COLUMN tce_ptemp_err:  Planet Effective Temperature Unc. [K]
+#COLUMN tce_albedo_stat: Albedo Comparison Statistic
+#COLUMN tce_ptemp_stat: Effective Temperature Comparison Statistic
 
 
 ################################################################################
@@ -166,8 +166,8 @@ COLUMN tce_rminmes:    Calculated Ratio Min. MES over MES
 # COLUMN av_pp_pc:       Autovetter Planet Candidate Posterior Probabilities [percentage]
 # COLUMN av_pp_afp:      Autovetter Astrophysical False Positive Posterior Probabilities [percentage]
 # COLUMN av_pp_ntp:      Autovetter Non Transiting Phenomena Posterior Probabilities [percentage]
-# COLUMN av_training_set: Autovetter Training Set Label
-# COLUMN av_pred_class:  Autovetter Predicted Classification
+COLUMN av_training_set: Autovetter Training Set Label
+COLUMN av_pred_class:  Autovetter Predicted Classification
 
 
 ################################################################################
