@@ -1,8 +1,8 @@
-
 import numpy as np
 import pandas as pd
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
+from config import *
 
 pd.set_option('display.max_rows', 20)
 pd.set_option('display.max_columns', 18)
@@ -15,15 +15,6 @@ class dataCls:
     Load data files from flat files and clean them up
 
     """
-    rawDataPath = "../../data/raw/tce/"
-    tceDataPath = "../../data/tce_computed/"
-
-    # The list of columns that are not involving any calculations
-    tceInfoCols = [
-        'kepid',
-        'av_training_set',  # Autovetter Training Set Label
-        'av_pred_class'     # Autovetter Predicted Classification
-    ]
 
     # Number of principal components to consider after PCA. This will determine
     # after analysis of cumulative variance proportions
@@ -34,7 +25,7 @@ class dataCls:
         Load Column data and clean up them
         """
         colsDf = pd.read_table(
-            "%s%s" % (self.rawDataPath, colFile),
+            "%s%s" % (TCE_RAW_DATA_PATH, colFile),
             comment="#"
         )
 
@@ -67,7 +58,7 @@ class dataCls:
         self.tceCols = tceCols
 
         # Save TCE Column data
-        tceColListFile = "%s%s" % (self.tceDataPath, "tce_collist.csv")
+        tceColListFile = "%s%s" % (TCE_COMPUTED, TCE_USED_COL_LIST_FNAME)
         # Save process raw data
         self.tceCols.to_csv(
             tceColListFile,
@@ -78,14 +69,14 @@ class dataCls:
         Load Threshold Crossing Event (TCE) data
         """
         self.tceRawDf = pd.read_csv(
-            "%s%s" % (self.rawDataPath, dataFile),
+            "%s%s" % (TCE_RAW_DATA_PATH, dataFile),
             comment="#",
             usecols=list(self.tceCols.parameter)
         )
 
-        self.tceInfoData = self.tceRawDf[self.tceInfoCols]
+        self.tceInfoData = self.tceRawDf[TCE_INFO_COL_LIST]
         self.tceRawDf = self.tceRawDf[
-            list(set(self.tceRawDf.columns) - set(self.tceInfoCols))
+            list(set(self.tceRawDf.columns) - set(TCE_INFO_COL_LIST))
         ]
 
         # Drop all the columns that are empty (NaN)
@@ -96,7 +87,7 @@ class dataCls:
         self.n_rows_rawData, self.n_cols_rawData = self.tceRawDf.shape
         self._standardizeData()
 
-        tceRawFile = "%s%s" % (self.tceDataPath, "tce_rawdata.csv")
+        tceRawFile = "%s%s" % (TCE_COMPUTED, TCE_RAW_CLEAN_DATA_FNAME)
         pd.concat(
             [self.tceInfoData, self.tceRawDf],
             axis=1
@@ -105,12 +96,11 @@ class dataCls:
             index=False
         )
 
-
         print("TCE raw data saved at : %s" % (tceRawFile))
 
         # Save first 1000 records to a file
         self.tceRawDf[:1000].to_csv(
-            "%s%s" % (self.tceDataPath, "tce_1000.csv"),
+            "%s%s" % (TCE_COMPUTED, "tce_1000.csv"),
             index=True
         )
 
@@ -126,7 +116,7 @@ class dataCls:
         )
         self.n_rows, self.n_cols = self.tceData.shape
         self.tceData[:1000].to_csv(
-            "%s%s" % (self.tceDataPath, "tce_std1000.csv"),
+            "%s%s" % (TCE_COMPUTED, "tce_std1000.csv"),
             index=True
         )
 
@@ -153,7 +143,7 @@ class dataCls:
             cu += self.eigenDf.iloc[i]['Proportion (%)']
             self.eigenDf.loc[i, 'Cumulative (%)'] = cu
 
-        fileEig = "%s%s" % (self.tceDataPath, "tce_eigenvalues.csv")
+        fileEig = "%s%s" % (TCE_COMPUTED, TCE_EIGENVALUES_FNAME)
         print("Eigenvalues are saved at: %s" % (fileEig))
         self.eigenDf.to_csv(
             fileEig,
@@ -172,7 +162,7 @@ class dataCls:
         )
 
         # save transformed data to a file
-        tceTransDataFile = '%s%s' % (self.tceDataPath, "tce_pcaTransformedData.csv")
+        tceTransDataFile = '%s%s' % (TCE_COMPUTED, TCE_TRANSFORMED_DATA_FNAME)
         pd.concat(
             [self.tceInfoData, self.tceTransData],
             axis=1
@@ -198,7 +188,7 @@ class dataCls:
         pcCols = ["PC%s" % (i) for i in range(0, self.nPC)]
         interpreDataCorr = interpreDataCorr[pcCols]
         interpreDataCorr.to_csv(
-            "%s%s" % (self.tceDataPath, "tce_Parameter_PC_correlation.csv"),
+            "%s%s" % (TCE_COMPUTED, TCE_PARAMETERS_PC_CORRELATION_FNAME),
             index=True
         )
         # print(interpreData.head())
@@ -206,6 +196,6 @@ class dataCls:
 
 
 if __name__ == '__main__':
-    tcedata = dataCls("tce_cols.csv", "q1_q17_dr24_tce.csv")
+    tcedata = dataCls(TCE_COL_FNAME, TCE_RAW_FNAME)
     tcedata.pcaTce()
     tcedata.pcaInterpretation()
