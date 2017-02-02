@@ -1,0 +1,130 @@
+name: udacity_mlnd
+channels:
+- menpo
+- tlatorre
+- ska
+- asmeurer
+- defaults
+dependencies:
+- glib=2.43.0=2
+- astropy=1.1.2=np111py27_0
+- backports=1.0=py27_0
+- backports_abc=0.4=py27_0
+- cairo=1.12.18=6
+- configparser=3.5.0b2=py27_1
+- cycler=0.10.0=py27_0
+- decorator=4.0.9=py27_0
+- entrypoints=0.2=py27_1
+- expat=2.1.0=0
+- fontconfig=2.11.1=5
+- freetype=2.5.5=0
+- funcsigs=1.0.2=py27_0
+- get_terminal_size=1.0.0=py27_0
+- harfbuzz=0.9.39=0
+- ipykernel=4.3.1=py27_0
+- ipython=4.2.0=py27_0
+- ipython_genutils=0.1.0=py27_0
+- ipywidgets=4.1.1=py27_0
+- jbig=2.1=0
+- jinja2=2.8=py27_0
+- jpeg=8d=0
+- jsonschema=2.4.0=py27_0
+- jupyter=1.0.0=py27_2
+- jupyter_client=4.2.2=py27_0
+- jupyter_console=4.1.1=py27_0
+- jupyter_core=4.1.0=py27_0
+- lcms=1.19=0
+- libffi=3.2.1=0
+- libgcc=5.2.0=0
+- libgfortran=3.0.0=1
+- libpng=1.6.17=0
+- libprotobuf=3.0.0=0
+- libsodium=1.0.3=0
+- libtiff=4.0.6=2
+- libxml2=2.9.2=0
+- markupsafe=0.23=py27_0
+- matplotlib=1.5.1=np111py27_0
+- mistune=0.7.2=py27_0
+- mkl=2017.0.1=0
+- mock=2.0.0=py27_0
+- mpmath=0.19=py27_1
+- nbconvert=4.2.0=py27_0
+- nbformat=4.0.1=py27_0
+- networkx=1.11=py27_0
+- notebook=4.2.0=py27_0
+- numpy=1.11.3=py27_0
+- openssl=1.0.2h=0
+- pandas=0.18.0=np111py27_0
+- pango=1.39.0=1
+- path.py=8.2.1=py27_0
+- pbr=1.10.0=py27_0
+- pexpect=4.0.1=py27_0
+- pickleshare=0.5=py27_0
+- pil=1.1.7=py27_2
+- pillow=3.4.2=py27_0
+- pip=9.0.1=py27_0
+- pixman=0.32.6=0
+- protobuf=3.0.0=py27_1
+- ptyprocess=0.5=py27_0
+- pycairo=1.10.0=py27_0
+- pygments=2.1.3=py27_0
+- pyparsing=2.1.1=py27_0
+- pyqt=4.11.4=py27_1
+- python=2.7.13=0
+- python-dateutil=2.5.2=py27_0
+- pytz=2016.3=py27_0
+- pyzmq=15.2.0=py27_0
+- qt=4.8.7=1
+- qtconsole=4.2.1=py27_0
+- readline=6.2=2
+- scikit-image=0.12.3=np111py27_1
+- scikit-learn=0.18.1=np111py27_1
+- scipy=0.18.1=np111py27_1
+- setuptools=20.7.0=py27_0
+- simplegeneric=0.8.1=py27_0
+- singledispatch=3.4.0.3=py27_0
+- sip=4.16.9=py27_0
+- six=1.10.0=py27_0
+- sqlite=3.13.0=0
+- ssl_match_hostname=3.4.0.2=py27_1
+- sympy=1.0=py27_0
+- tensorflow=0.10.0rc0=np111py27_0
+- terminado=0.5=py27_1
+- tk=8.5.18=0
+- tornado=4.3=py27_0
+- traitlets=4.2.1=py27_0
+- wheel=0.29.0=py27_0
+- xlrd=1.0.0=py27_0
+- xz=5.2.2=0
+- yaml=0.1.6=0
+- zeromq=4.1.3=0
+- zlib=1.2.8=0
+- opencv=2.4.11=nppy27_0
+- pygtk=2.16.0=1
+- sdl=2.0.1=1
+- pip:
+  - astroml==0.3
+  - astroml-addons==0.2.2
+  - backports-abc==0.4
+  - backports.shutil-get-terminal-size==1.0.0
+  - backports.ssl-match-hostname==3.4.0.2
+  - cite2c==0.1
+  - commando==1.0.0
+  - fswrap==1.0.0
+  - html2text==2016.9.19
+  - hyde==0.8.9
+  - ipython-genutils==0.1.0
+  - jupyter-client==4.2.2
+  - jupyter-console==4.1.1
+  - jupyter-core==4.1.0
+  - markdown==2.6.7
+  - powerline-status==2.2.dev9999+git.03195cf93fbb8f31653bc5d157e11e96da715d32
+  - psutil==4.1.0
+  - pygame==1.9.2b8
+  - pygithub==1.29
+  - python-contrib-nbextensions==alpha
+  - pyyaml==3.11
+  - smartypants==1.8.6
+  - typogrify==2.0.7
+prefix: /home/ppeiris/anaconda3/envs/udacity_mlnd
+
