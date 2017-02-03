@@ -151,8 +151,6 @@ class tceNN:
         self.predictPlanets = tclf.predict(self.fTesting)
         end = time()
         self._append('predictTime', end - start)
-        score = tclf.score(self.fTesting, self.lTesting.values.ravel())
-        self._append('score', score)
         self._append('TrainingLoss', tclf.loss_)
         self._append('lossCurve', tclf.loss_curve_)
         self.computeAccuracyScore(self.lTesting, self.predictPlanets)
