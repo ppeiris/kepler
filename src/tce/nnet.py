@@ -90,9 +90,8 @@ class tceNN:
 
     def computeClassificationReport(self, y_true, y_pred):
         # http://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html#sklearn.metrics.classification_report
-        creport = classification_report(y_true, y_pred, target_names=['A', 'B', 'C'])
+        creport = classification_report(y_true, y_pred, target_names=CLASS_LABELS)
         self._append('classification_report', creport)
-
 
     def _append(self, param, value):
         row = dict()
@@ -151,8 +150,6 @@ class tceNN:
         self.predictPlanets = tclf.predict(self.fTesting)
         end = time()
         self._append('predictTime', end - start)
-        score = tclf.score(self.fTesting, self.lTesting.values.ravel())
-        self._append('score', score)
         self._append('TrainingLoss', tclf.loss_)
         self._append('lossCurve', tclf.loss_curve_)
         self.computeAccuracyScore(self.lTesting, self.predictPlanets)
@@ -170,6 +167,7 @@ if __name__ == '__main__':
     mlps = []
 
     for solver in MLP_SOLVERS:
+        print(MLP_SOLVERS[solver]['clfParam'])
         tce = tceNN()
         tce.splitTrainTest()
         clfStatus, clf = tce.getClassifier(MLP_SOLVERS[solver])
@@ -178,9 +176,8 @@ if __name__ == '__main__':
         tce.predictPlanets(clf)
         tce.saveOutPutData(solver)
         tce.saveTrainedClassifier(clfStatus, clf, MLP_SOLVERS[solver])
+        MLP_SOLVERS[solver]['clfParam']['clf'] = clf
+        MLP_SOLVERS[solver]['otherParam']['matrix'] = tce.accuracyDf
 
-    #     MLP_SOLVERS[solver]['clf'] = trainedClf
-    #     MLP_SOLVERS[solver]['label'] = label
-
-    # plt = plots(len(MLP_SOLVERS))
-    # plt.plot(MLP_SOLVERS)
+    plt = plots()
+    plt.plot(MLP_SOLVERS)
