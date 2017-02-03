@@ -41,6 +41,7 @@ TESTING_DATA_FNAME = config.get('predict', 'testingdata')
 TESTING_PREDICT_DATA = config.get('predict', 'predictdata')
 OUTPUT_METRIX = config.get('predict', 'predictmetrics')
 
+CLASS_LABELS = [c[1] for c in config.items("classlabels")]
 
 # MLPClassifier Solvers
 MLP_SOLVERS = dict()
@@ -95,8 +96,9 @@ for sec in MLP_SOLVERS:
 
 
 if __name__ == '__main__':
-    for i in MLP_SOLVERS:
-        MLP_SOLVERS[i]['clf'] = 'test'
-        # print MLP_SOLVERS[i]['clf']
+    print [c[1] for c in config.items("classlabels")]
+    # for i in MLP_SOLVERS:
+    #     MLP_SOLVERS[i]['clf'] = 'test'
+    #     # print MLP_SOLVERS[i]['clf']
 
-    print(MLP_SOLVERS)
+    # print(MLP_SOLVERS)
