@@ -1,2 +1,4 @@
 papers/
 scikit-learn/
+*/*.pyc
+*.pyc
