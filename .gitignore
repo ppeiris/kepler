@@ -1,2 +1,3 @@
 papers/
 scikit-learn/
+*.pyc
