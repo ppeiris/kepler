@@ -1,10 +1,14 @@
 import numpy as np
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from time import time
 from config import *
 import os
 import itertools
+
+
 
 class plots:
 
