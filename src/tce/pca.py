@@ -18,7 +18,7 @@ class dataCls:
 
     # Number of principal components to consider after PCA. This will determine
     # after analysis of cumulative variance proportions
-    nPC = 21
+    nPC = 20
 
     def __init__(self, colFile, dataFile):
         """
@@ -152,7 +152,13 @@ class dataCls:
 
         # Transform data
         self.tceTransData = pd.DataFrame(self.pca.transform(self.tceData))
+
+        if len(self.tceTransData.columns) < self.nPC:
+            print "Reduce Principal Components %s to %s" % (self.nPC, len(self.tceTransData.columns))
+            self.nPC = len(self.tceTransData.columns)
+
         self.tceTransData = self.tceTransData[[i for i in range(0, self.nPC)]]
+
         pcCols = [
             [i, "PC%s" % (i)] for i in range(0, self.nPC)
         ]

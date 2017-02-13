@@ -49,33 +49,33 @@ class plots:
 
     def _plot_confusion_matrix(self, MLP_SOLVERS):
 
-        for solver in MLP_SOLVERS:
-            matrixDf = MLP_SOLVERS[solver]['otherParam']['matrix']
-            tcmat = matrixDf[matrixDf.param == 'confusion_matrix']
-            cm = tcmat['value'][tcmat['value'].index[0]]
-            confusion_matrix = PRED_DATA_PATH + solver + '/' + 'confusion_matrix'
-            plt.figure()
-            plt.imshow(cm, interpolation='nearest', cmap=plt.cm.Blues)
-            plt.title('confusion_matrix')
-            plt.colorbar()
-            tick_marks = np.arange(len(CLASS_LABELS))
-            plt.xticks(tick_marks, CLASS_LABELS, rotation=45)
-            plt.yticks(tick_marks, CLASS_LABELS)
+        for normalize, pname in zip((True, False), ('_norm', '')):
+            for solver in MLP_SOLVERS:
+                matrixDf = MLP_SOLVERS[solver]['otherParam']['matrix']
+                tcmat = matrixDf[matrixDf.param == 'confusion_matrix']
+                cm = tcmat['value'][tcmat['value'].index[0]]
+                confusion_matrix = PRED_DATA_PATH + solver + '/' + 'confusion_matrix' + pname
+                plt.figure()
+                plt.imshow(cm, interpolation='nearest', cmap=plt.cm.Blues)
+                plt.title('confusion_matrix')
+                plt.colorbar()
+                tick_marks = np.arange(len(CLASS_LABELS))
+                plt.xticks(tick_marks, CLASS_LABELS, rotation=45)
+                plt.yticks(tick_marks, CLASS_LABELS)
 
-            normalize = True
-            if normalize:
-                cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
-                print("Normalized confusion matrix")
-            else:
-                print('Confusion matrix, without normalization')
+                if normalize:
+                    cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+                    print("Normalized confusion matrix")
+                else:
+                    print('Confusion matrix, without normalization')
 
-            thresh = cm.max() / 2.0
-            for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
-                plt.text(j, i, round(cm[i, j], 2),
-                         horizontalalignment="center",
-                         color="white" if cm[i, j] > thresh else "black")
+                thresh = cm.max() / 2.0
+                for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
+                    plt.text(j, i, round(cm[i, j], 2),
+                             horizontalalignment="center",
+                             color="white" if cm[i, j] > thresh else "black")
 
-            plt.ylabel('True label')
-            plt.xlabel('Predicted label')
-            plt.tight_layout()
-            plt.savefig(confusion_matrix)
+                plt.ylabel('True label')
+                plt.xlabel('Predicted label')
+                plt.tight_layout()
+                plt.savefig(confusion_matrix)

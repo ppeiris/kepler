@@ -4,15 +4,36 @@ import os
 config = ConfigParser.RawConfigParser()
 config.read("parameters.conf")
 
+v = config.get('version', 'version')
+
+
+def appendVersion(fname):
+    global v
+    if fname:
+        s = fname.split('.')
+        if (len(s) == 1):
+            return fname
+        return '.'.join(s[:-1]) + '_' + v + '.' + s[-1]
+
+
 TCE_COMPUTED = config.get('paths', 'tceDataPath')
 if not os.path.exists(TCE_COMPUTED):
     os.makedirs(TCE_COMPUTED)
+
+if not os.path.exists(TCE_COMPUTED + v + '/'):
+    os.makedirs(TCE_COMPUTED + v + '/')
+
+TCE_COMPUTED = TCE_COMPUTED + v + '/'
+
 
 TCE_RAW_DATA_PATH = config.get('paths', 'rawDataPath')
 if not os.path.exists(TCE_RAW_DATA_PATH):
     os.makedirs(TCE_RAW_DATA_PATH)
 
 PRED_DATA_PATH = config.get('paths', 'predDataPath')
+
+predPath = PRED_DATA_PATH.split('/')
+PRED_DATA_PATH = '/'.join(predPath[:-2]) + '/' + v + '/' + predPath[-2] + '/'
 if not os.path.exists(PRED_DATA_PATH):
     os.makedirs(PRED_DATA_PATH)
 
@@ -21,13 +42,14 @@ if not os.path.exists(CLASSIFIER_PATH):
     os.makedirs(CLASSIFIER_PATH)
 
 TCE_RAW_FNAME = config.get('rawdata', 'rawDataFile')
-TCE_COL_FNAME = config.get('rawdata', 'colFileName')
+TCE_COL_FNAME = appendVersion(config.get('rawdata', 'colFileName'))
 TCE_INFO_COL_LIST = [c[1] for c in config.items("tceInfoCols")]
-TCE_USED_COL_LIST_FNAME = config.get('computedFiles', 'tcecollist')
-TCE_RAW_CLEAN_DATA_FNAME = config.get('computedFiles', 'tcerawdata')
-TCE_EIGENVALUES_FNAME = config.get('computedFiles', 'tceeigenvalues')
-TCE_TRANSFORMED_DATA_FNAME = config.get('computedFiles', 'tcepcaTransformedData')
-TCE_PARAMETERS_PC_CORRELATION_FNAME = config.get('computedFiles', 'tceParameterPcCorrelation')
+
+TCE_USED_COL_LIST_FNAME = appendVersion(config.get('computedFiles', 'tcecollist'))
+TCE_RAW_CLEAN_DATA_FNAME = appendVersion(config.get('computedFiles', 'tcerawdata'))
+TCE_EIGENVALUES_FNAME = appendVersion(config.get('computedFiles', 'tceeigenvalues'))
+TCE_TRANSFORMED_DATA_FNAME = appendVersion(config.get('computedFiles', 'tcepcaTransformedData'))
+TCE_PARAMETERS_PC_CORRELATION_FNAME = appendVersion(config.get('computedFiles', 'tceParameterPcCorrelation'))
 
 # # check if the previously trained classifer exists
 # CLASSIFER_NAME = config.get('classifier', 'classifierName')
@@ -36,10 +58,10 @@ TCE_PARAMETERS_PC_CORRELATION_FNAME = config.get('computedFiles', 'tceParameterP
 # else:
 #     CLASSIFER_NAME = CLASSIFIER_PATH + CLASSIFER_NAME
 
-TRAINING_DATA_FNAME = config.get('predict', 'trainingdata')
-TESTING_DATA_FNAME = config.get('predict', 'testingdata')
-TESTING_PREDICT_DATA = config.get('predict', 'predictdata')
-OUTPUT_METRIX = config.get('predict', 'predictmetrics')
+TRAINING_DATA_FNAME = appendVersion(config.get('predict', 'trainingdata'))
+TESTING_DATA_FNAME = appendVersion(config.get('predict', 'testingdata'))
+TESTING_PREDICT_DATA = appendVersion(config.get('predict', 'predictdata'))
+OUTPUT_METRIX = appendVersion(config.get('predict', 'predictmetrics'))
 
 CLASS_LABELS = [c[1] for c in config.items("classlabels")]
 
@@ -96,7 +118,9 @@ for sec in MLP_SOLVERS:
 
 
 if __name__ == '__main__':
-    print [c[1] for c in config.items("classlabels")]
+
+    print PRED_DATA_PATH
+    # print [c[1] for c in config.items("classlabels")]
     # for i in MLP_SOLVERS:
     #     MLP_SOLVERS[i]['clf'] = 'test'
     #     # print MLP_SOLVERS[i]['clf']
