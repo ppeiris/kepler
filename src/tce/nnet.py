@@ -108,8 +108,8 @@ class tceNN:
             self.lTesting = train_test_split(
                 self.tceData,
                 self.tceLables,
-                train_size=0.7,
-                random_state=33
+                train_size=0.95,
+                random_state=55
             )
         # print(self.lTraining.values.ravel())
 
