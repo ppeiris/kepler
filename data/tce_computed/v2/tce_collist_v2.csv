@@ -1,0 +1,20 @@
+parameter,description,units
+kepid,          KepID,
+tce_ror,        Planet-Star Radius Ratio,
+tce_incl,       Inclination ,deg
+tce_impact,     Impact Parameter,
+tce_duration,   Transit Duration ,hrs
+tce_ingress,    Ingress Duration ,hrs
+tce_depth,      Transit Depth ,ppm
+tce_eccen,      Eccentricity,
+tce_longp,      Long. of Periastron ,deg
+tce_ldm_coeff4, Limb Darkening Coeff. 4,
+tce_model_snr,  Transit Signal-to-Noise (SNR),
+tce_sma,        Orbit Semi-Major Axis ,AU
+tcet_model_chisq, Chi-Square,
+tce_max_sngle_ev, Single Event Statistic,
+av_vf_afp,      Autovetter Astrophysical False Positive Vote Fraction ,percentage
+av_vf_ntp,      Autovetter Non Transiting Phenomena Vote Fraction ,percentage
+av_pp_ntp,      Autovetter Non Transiting Phenomena Posterior Probabilities ,percentage
+av_training_set, Autovetter Training Set Label,
+av_pred_class,  Autovetter Predicted Classification,

@@ -45,6 +45,7 @@ class tceNN:
 
         self.accuracyDf = pd.DataFrame(columns=['param', 'value'])
 
+        print PRED_DATA_PATH
         if not os.path.exists(PRED_DATA_PATH):
             os.makedirs(PRED_DATA_PATH)
 
