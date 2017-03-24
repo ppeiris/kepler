@@ -60,68 +60,129 @@
 \newlabel{fig:kpipleline}{{1.8}{14}{Data flow diagram for the SOC Science Pipeline. Image Credit: The American Astronomical Society}{figure.1.8}{}}
 \newlabel{eq:ses}{{1.1}{15}{Kepler Pipeline}{equation.1.6.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.7}KOI and TCE Attributes }{15}{section.1.7}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.8}Missing Attributes}{16}{section.1.8}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.9}TCE Classification Labels}{16}{section.1.9}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.8}TCE Classification Labels}{16}{section.1.8}}
 \citation{2014PASP..126..398H}
 \citation{2014SPIE.9143E..20R}
 \citation{2014ExA....38..249R}
 \citation{2015ApJ...800...99T}
 \citation{2015ApJ...806....6M}
-\@writefile{toc}{\contentsline {section}{\numberline {1.10}The Problem statement}{17}{section.1.10}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.11}Solution Statement}{18}{section.1.11}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.9}The Problem statement}{17}{section.1.9}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.10}Solution Statement}{18}{section.1.10}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}Analysis}{19}{chapter.2}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}Threshold Crossing Event Catalog}{19}{section.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Threshold Crossing Event Catalog: \url  {http://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=q1_q12_tce}}}{20}{figure.2.1}}
-\newlabel{fig:tcecatalog}{{2.1}{20}{Threshold Crossing Event Catalog: \url {http://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=q1_q12_tce}}{figure.2.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}TCE Attributes}{20}{section.2.2}}
-\newlabel{label:tce_attributes}{{2.2}{20}{TCE Attributes}{section.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Threshold Crossing Event Catalog Details}}{21}{figure.2.2}}
-\newlabel{fig:tcecatalogdetail}{{2.2}{21}{Threshold Crossing Event Catalog Details}{figure.2.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Transit Fit Parameters}{21}{section.2.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}\emph  {tce\_ror}: Ratio between planet radius and stellar radios}{22}{subsection.2.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}\emph  {tce\_duration}: Transit Duration}{22}{subsection.2.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}\emph  {tce\_impact}: Impact Parameter}{22}{subsection.2.3.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}\emph  {tce\_model\_snr}: Transit SNR}{22}{subsection.2.3.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Ratio between planet radius and stellar radios}}{23}{figure.2.3}}
-\newlabel{plot:planet_star_radius_ratio}{{2.3}{23}{Ratio between planet radius and stellar radios}{figure.2.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.5}Stellar Parameters}{23}{subsection.2.3.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Transit Duration}}{24}{figure.2.4}}
-\newlabel{plot:transitduration}{{2.4}{24}{Transit Duration}{figure.2.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.6}\emph  {tce\_steff}: Stellar Effective Temperature (K)}{24}{subsection.2.3.6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Transit SNR}}{25}{figure.2.5}}
-\newlabel{plot:transitsnr}{{2.5}{25}{Transit SNR}{figure.2.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.7}\emph  {tce\_slogg}: Stellar Surface Gravity}{25}{subsection.2.3.7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Stellar Effective Temperature (K)}}{26}{figure.2.6}}
-\newlabel{plot:stellartemp}{{2.6}{26}{Stellar Effective Temperature (K)}{figure.2.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces  Stellar Surface Gravity log10(cm/$s^{2}$)}}{27}{figure.2.7}}
-\newlabel{plot:stellargravity}{{2.7}{27}{Stellar Surface Gravity log10(cm/$s^{2}$)}{figure.2.7}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Methodology}{28}{chapter.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Two examples of light curves which produce TCEs. \emph  {Top}: a planet candidate, with multiple transit-like features of comparable depth. \emph  {Bottom}: a spurious candidate, with a single large feature at the end of the light curve and a small bump at 79 days that are combined and interpreted as a TCE.}}{20}{figure.2.1}}
+\newlabel{fig:TCE_lightcurves}{{2.1}{20}{Two examples of light curves which produce TCEs. \emph {Top}: a planet candidate, with multiple transit-like features of comparable depth. \emph {Bottom}: a spurious candidate, with a single large feature at the end of the light curve and a small bump at 79 days that are combined and interpreted as a TCE}{figure.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Threshold Crossing Event Catalog: \url  {http://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=q1_q12_tce}}}{21}{figure.2.2}}
+\newlabel{fig:tcecatalog}{{2.2}{21}{Threshold Crossing Event Catalog: \url {http://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=q1_q12_tce}}{figure.2.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}TCE Attributes}{21}{section.2.2}}
+\newlabel{label:tce_attributes}{{2.2}{21}{TCE Attributes}{section.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Threshold Crossing Event Catalog Details}}{22}{figure.2.3}}
+\newlabel{fig:tcecatalogdetail}{{2.3}{22}{Threshold Crossing Event Catalog Details}{figure.2.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Transit Fit Parameters}{22}{subsection.2.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Ratio between planet radius and stellar radius (\emph  {tce\_ror})}{23}{section*.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Ratio between planet radius and stellar radios}}{23}{figure.2.4}}
+\newlabel{plot:planet_star_radius_ratio}{{2.4}{23}{Ratio between planet radius and stellar radios}{figure.2.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Transit Duration (\emph  {tce\_duration)}}{24}{section*.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Transit Duration}}{24}{figure.2.5}}
+\newlabel{plot:transitduration}{{2.5}{24}{Transit Duration}{figure.2.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Impact Parameter(\emph  {tce\_impact})}{25}{section*.4}}
+\@writefile{toc}{\contentsline {subsubsection}{Transit SNR (\emph  {tce\_model\_snr})}{25}{section*.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Transit SNR}}{25}{figure.2.6}}
+\newlabel{plot:transitsnr}{{2.6}{25}{Transit SNR}{figure.2.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Stellar Parameters}{26}{subsection.2.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Stellar Effective Temperature (K) (\emph  {tce\_steff})}{26}{section*.6}}
+\@writefile{toc}{\contentsline {subsubsection}{Stellar Surface Gravity (\emph  {tce\_slogg})}{26}{section*.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Light Curve Based Vetting Statistics}{26}{subsection.2.2.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Stellar Effective Temperature (K)}}{27}{figure.2.7}}
+\newlabel{plot:stellartemp}{{2.7}{27}{Stellar Effective Temperature (K)}{figure.2.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Single Event Statistics (SES)}{27}{section*.8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces  Stellar Surface Gravity log10(cm/$s^{2}$)}}{28}{figure.2.8}}
+\newlabel{plot:stellargravity}{{2.8}{28}{Stellar Surface Gravity log10(cm/$s^{2}$)}{figure.2.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Multiple Event Statistic (MES)}{28}{section*.9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Missing Attributes}{28}{section.2.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Principal Component Analysis}{29}{section.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Naive Basis}{29}{subsection.2.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Ax}}{30}{figure.2.9}}
+\newlabel{plot:3d}{{2.9}{30}{Ax}{figure.2.9}{}}
+\newlabel{eq:I}{{2.1}{30}{Naive Basis}{equation.2.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Change of Basis}{30}{subsection.2.4.2}}
+\newlabel{eq:p}{{2.2}{31}{Change of Basis}{equation.2.4.2}{}}
+\newlabel{eq:px}{{2.3}{31}{Change of Basis}{equation.2.4.3}{}}
+\newlabel{eq:y}{{2.4}{31}{Change of Basis}{equation.2.4.4}{}}
+\newlabel{eq:snr}{{2.5}{32}{Change of Basis}{equation.2.4.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Solving PCA using Eigenvalue Decomposistion}{32}{subsection.2.4.3}}
+\newlabel{eq:cy}{{2.6}{32}{Solving PCA using Eigenvalue Decomposistion}{equation.2.4.6}{}}
+\newlabel{eq:cy1}{{2.7}{32}{Solving PCA using Eigenvalue Decomposistion}{equation.2.4.7}{}}
+\citation{maier1995use}
+\citation{mcculloch1943logical}
+\citation{Rumelhart:1986:LIR:104279.104293}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Application of Artificial Neural Networks in Astrophysics}{33}{section.2.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Artificial Neural Networks}{34}{subsection.2.5.1}}
+\newlabel{eq:sum}{{2.8}{34}{Artificial Neural Networks}{equation.2.5.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces Typical Structure of ANNs}}{35}{figure.2.10}}
+\newlabel{fig:ann}{{2.10}{35}{Typical Structure of ANNs}{figure.2.10}{}}
+\newlabel{eq:transfer}{{2.9}{35}{Artificial Neural Networks}{equation.2.5.9}{}}
+\citation{mcculloch1943logical}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces Artificial Neuron}}{36}{figure.2.11}}
+\newlabel{fig:an}{{2.11}{36}{Artificial Neuron}{figure.2.11}{}}
+\citation{Introduction_to_the_theory_of_neural_computation}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Multi-layer Perceptrons}{37}{subsection.2.5.2}}
+\newlabel{eq:error}{{2.10}{37}{Multi-layer Perceptrons}{equation.2.5.10}{}}
+\newlabel{eq:gd}{{2.11}{38}{Multi-layer Perceptrons}{equation.2.5.11}{}}
+\newlabel{eq:weightupdate}{{2.12}{38}{Multi-layer Perceptrons}{equation.2.5.12}{}}
+\newlabel{eq:momemtum}{{2.13}{38}{Multi-layer Perceptrons}{equation.2.5.13}{}}
+\citation{teh1997prediction}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Simulated error surface with local and global minimums. (Image credit: \url  {https://projects.g-node.org/emoo/)}}}{40}{figure.2.12}}
+\newlabel{fig:globalmin}{{2.12}{40}{Simulated error surface with local and global minimums. (Image credit: \url {https://projects.g-node.org/emoo/)}}{figure.2.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}Model Validation}{42}{subsection.2.5.3}}
+\newlabel{eq:coefficient_of_correlation}{{2.14}{42}{Model Validation}{equation.2.5.14}{}}
+\citation{hamey1991benchmarking}
+\citation{2011MNRAS.414.2602D}
+\citation{feigelson2012}
+\citation{2015ApJ...806....6M}
+\citation{2015ApJ...806....6M}
+\citation{2015ApJ...806....6M}
+\newlabel{sq:rmse}{{2.15}{43}{Model Validation}{equation.2.5.15}{}}
+\newlabel{sq:mae}{{2.16}{43}{Model Validation}{equation.2.5.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.4}Benchmark Model}{43}{subsection.2.5.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces Comparison of Random forest, Naive Bayes and K-NN. Image Credit: McCauliff et al. 2015 \cite  {2015ApJ...806....6M}}}{44}{figure.2.13}}
+\newlabel{fig:benchmark}{{2.13}{44}{Comparison of Random forest, Naive Bayes and K-NN. Image Credit: McCauliff et al. 2015 \cite {2015ApJ...806....6M}}{figure.2.13}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Methodology}{45}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{29}{chapter.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Apply PCA to TCE Catalog }{46}{section.3.1}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{47}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \bibdata{Reference/ref}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{30}{chapter.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{48}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \bibcite{2016Natur.536..437A}{1}
 \bibcite{Borucki977}{2}
 \bibcite{2000ApJ...529L..45C}{3}
 \bibcite{2011yCat..35290075C}{4}
-\bibcite{Gardner2006}{5}
-\bibcite{2014PASP..126..398H}{6}
-\bibcite{2010ApJ...713L..87J}{7}
-\bibcite{2010ApJ...713L..79K}{8}
-\bibcite{2014ApJ...787L..29K}{9}
-\bibcite{2002ApJ...580L.171M}{10}
-\bibcite{2015ApJ...806....6M}{11}
-\bibcite{2012PASP..124.1073P}{12}
-\bibcite{2014ExA....38..249R}{13}
-\bibcite{2014SPIE.9143E..20R}{14}
-\bibcite{2012PASP..124.1000S}{15}
-\bibcite{2015ApJ...800...99T}{16}
-\bibcite{voelkel2001johannes}{17}
-\bibcite{2002ApJ...580..494Y}{18}
+\bibcite{2011MNRAS.414.2602D}{5}
+\bibcite{feigelson2012}{6}
+\bibcite{Gardner2006}{7}
+\bibcite{hamey1991benchmarking}{8}
+\bibcite{Introduction_to_the_theory_of_neural_computation}{9}
+\bibcite{2014PASP..126..398H}{10}
+\bibcite{2010ApJ...713L..87J}{11}
+\bibcite{2010ApJ...713L..79K}{12}
+\bibcite{2014ApJ...787L..29K}{13}
+\bibcite{maier1995use}{14}
+\bibcite{2002ApJ...580L.171M}{15}
+\bibcite{2015ApJ...806....6M}{16}
+\bibcite{mcculloch1943logical}{17}
+\bibcite{2012PASP..124.1073P}{18}
+\bibcite{2014ExA....38..249R}{19}
+\bibcite{2014SPIE.9143E..20R}{20}
+\bibcite{Rumelhart:1986:LIR:104279.104293}{21}
+\bibcite{2012PASP..124.1000S}{22}
+\bibcite{teh1997prediction}{23}
+\bibcite{2015ApJ...800...99T}{24}
+\bibcite{voelkel2001johannes}{25}
+\bibcite{2002ApJ...580..494Y}{26}

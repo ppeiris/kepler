@@ -7,3 +7,10 @@
 \todo{- Explain the cording process and any complications}
 \todo{Refinement}
 \todo{- Explain how the process improved. show the initial with someother activation function with bad outputs and bad loss funcitons. show some bad initial results.}
+
+
+
+Initial Threshold Crossing Events (TCE) catalog contains 237 attributes. Each of these attributes has different strengths when it comes to classifying the ephemerides. For us to develop and train a proper network model to classify Kepler dataset, we need to understand the variables in the catalog carefully. As describe in the previous section,  there are many variables in the dataset that needed to be in the final input dataset of the network; however, dependencies between variables and non-significant variables need to remove from the dataset of entry in order to increase the performance of the network. To achieve high performance, we reducing the dataset using Principal Component Analysis and selecting top components to use as features. 
+
+
+\section{Apply PCA to TCE Catalog }

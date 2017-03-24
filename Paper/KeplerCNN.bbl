@@ -44,6 +44,20 @@ A.~{Claret} and S.~{Bloemen}.
   2011)}.
 \newblock {\em VizieR Online Data Catalog}, 352, March 2011.
 
+\bibitem{2011MNRAS.414.2602D}
+P.~{Dubath}, L.~{Rimoldini}, M.~{S{\"u}veges}, J.~{Blomme}, M.~{L{\'o}pez},
+  L.~M. {Sarro}, J.~{De Ridder}, J.~{Cuypers}, L.~{Guy}, I.~{Lecoeur},
+  K.~{Nienartowicz}, A.~{Jan}, M.~{Beck}, N.~{Mowlavi}, P.~{De Cat},
+  T.~{Lebzelter}, and L.~{Eyer}.
+\newblock {Random forest automated supervised classification of Hipparcos
+  periodic variable stars}.
+\newblock {\em mnras}, 414:2602--2617, July 2011.
+
+\bibitem{feigelson2012}
+Eric~D. Feigelson and G.~Jogesh Babu.
+\newblock {\em Modern Statistical Methods for Astronomy: With R Applications}.
+\newblock Cambridge University Press, Cambridge, 007 2012.
+
 \bibitem{Gardner2006}
 Jonathan~P. Gardner, John~C. Mather, Mark Clampin, Rene Doyon, Matthew~A.
   Greenhouse, Heidi~B. Hammel, John~B. Hutchings, Peter Jakobsen, Simon~J.
@@ -53,6 +67,16 @@ Jonathan~P. Gardner, John~C. Mather, Mark Clampin, Rene Doyon, Matthew~A.
   Gillian~S. Wright.
 \newblock The james webb space telescope.
 \newblock {\em Space Science Reviews}, 123(4):485--606, 2006.
+
+\bibitem{hamey1991benchmarking}
+Leonard~GC Hamey.
+\newblock Benchmarking feed-forward neural networks: models and measures.
+\newblock In {\em NIPS}, pages 1167--1174. Citeseer, 1991.
+
+\bibitem{Introduction_to_the_theory_of_neural_computation}
+John Hertz, Anders Krogh, and Richard~G. Palmer.
+\newblock {\em Introduction to the theory of neural computation}, volume~1.
+\newblock Addison-Wesley Pub. Co, Redwood City, Calif, 1991.
 
 \bibitem{2014PASP..126..398H}
 S.~B. {Howell}, C.~{Sobeck}, M.~{Haas}, M.~{Still}, T.~{Barclay},
@@ -86,6 +110,12 @@ R.~K. {Kopparapu}, R.~M. {Ramirez}, J.~{SchottelKotte}, J.~F. {Kasting},
   Mass}.
 \newblock {\em apjl}, 787:L29, June 2014.
 
+\bibitem{maier1995use}
+Holger~R Maier.
+\newblock {\em Use of artificial neural networks for modelling multivariate
+  water quality times series/by Holger Robert Maier.}
+\newblock PhD thesis, 1995.
+
 \bibitem{2002ApJ...580L.171M}
 K.~{Mandel} and E.~{Agol}.
 \newblock {Analytic Light Curves for Planetary Transit Searches}.
@@ -97,6 +127,11 @@ S.~D. {McCauliff}, J.~M. {Jenkins}, J.~{Catanzarite}, C.~J. {Burke}, J.~L.
   M.~{Cote}.
 \newblock {Automatic Classification of Kepler Planetary Transit Candidates}.
 \newblock {\em apj}, 806:6, June 2015.
+
+\bibitem{mcculloch1943logical}
+Warren~S McCulloch and Walter Pitts.
+\newblock A logical calculus of the ideas immanent in nervous activity.
+\newblock {\em The bulletin of mathematical biophysics}, 5(4):115--133, 1943.
 
 \bibitem{2012PASP..124.1073P}
 E.~A. {Petigura} and G.~W. {Marcy}.
@@ -160,6 +195,13 @@ G.~R. {Ricker}, J.~N. {Winn}, R.~{Vanderspek}, D.~W. {Latham}, G.~{\'A}.
   and Millimeter Wave}, volume 9143 of {\em procspie}, page 914320, August
   2014.
 
+\bibitem{Rumelhart:1986:LIR:104279.104293}
+D.~E. Rumelhart, G.~E. Hinton, and R.~J. Williams.
+\newblock Parallel distributed processing: Explorations in the microstructure
+  of cognition, vol. 1.
+\newblock chapter Learning Internal Representations by Error Propagation, pages
+  318--362. MIT Press, Cambridge, MA, USA, 1986.
+
 \bibitem{2012PASP..124.1000S}
 J.~C. {Smith}, M.~C. {Stumpe}, J.~E. {Van Cleve}, J.~M. {Jenkins}, T.~S.
   {Barclay}, M.~N. {Fanelli}, F.~R. {Girouard}, J.~J. {Kolodziejczak}, S.~D.
@@ -167,6 +209,12 @@ J.~C. {Smith}, M.~C. {Stumpe}, J.~E. {Van Cleve}, J.~M. {Jenkins}, T.~S.
 \newblock {Kepler Presearch Data Conditioning II - A Bayesian Approach to
   Systematic Error Correction}.
 \newblock {\em pasp}, 124:1000--1014, September 2012.
+
+\bibitem{teh1997prediction}
+CI~Teh, KS~Wong, ATC Goh, and S~Jaritngam.
+\newblock Prediction of pile capacity using neural networks.
+\newblock {\em Journal of computing in civil engineering}, 11(2):129--138,
+  1997.
 
 \bibitem{2015ApJ...800...99T}
 G.~{Torres}, D.~M. {Kipping}, F.~{Fressin}, D.~A. {Caldwell}, J.~D. {Twicken},

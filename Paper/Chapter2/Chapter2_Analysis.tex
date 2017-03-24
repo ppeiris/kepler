@@ -16,7 +16,21 @@
 	% calculated statistics relevant to the problem 
 	% sampling of the data.
 
-A Threshold-Crossing Events (TCE) are built using flux time series that has a sequence of transit-like features. The flux time series of a target star that resembles the signature of transiting planet with a high degree of confidence passed on for further analysis. Each TCE identified by a Kepler ID (KID). In the case of a star that holds multiple planets may have a many TCEs. 
+A Threshold-Crossing Events (TCE) are built using flux time series that has a sequence of transit-like features. The flux time series of a target star that resembles the signature of transiting planet with a high degree of confidence passed on for further analysis. Each TCE identified by a Kepler ID (KID). In the case of a star that holds multiple planets may have a many TCEs. Figure \ref{fig:TCE_lightcurves} show examples of two classes of TCEs. In the top plot is the flux time series for a true transiting planet candidate, with transit-like features of comparable depth. In the bottom plot is a flux time series containing a single very large feature and a bump that is slight above the noise floor; the Kepler pipeline identifies this flux time series as containing a
+transit signature despite the fact that it is just the artifact.
+ 
+
+
+\begin{figure}[!h]
+\begin{center}
+        \includegraphics[width=0.7\textheight]{img/TCE_lightcurves.png}
+        \caption{Two examples of light curves which produce TCEs. \emph{Top}: a planet
+candidate, with multiple transit-like features of comparable depth. \emph{Bottom}: a spurious candidate, with a
+single large feature at the end of the light curve and a small bump at 79 days that are combined and
+interpreted as a TCE.}  \label{fig:TCE_lightcurves}
+\end{center}
+\end{figure}
+
 
 \section{Threshold Crossing Event Catalog}
 
@@ -41,14 +55,14 @@ Figure \ref{fig:tcecatalog} show a sample of TCE datalog from Exoplanet Archive 
 
 Initial TCE attribute set contains 237 attributes that are based on the wavelet matched filter use by TPS, transit model fitting, difference image centroids, and some additional tests. Each of these attributes has different strength of prediction values. The importance of these attributes is selected using historical literature on attributes and performing a Principal Component Analysis. We discuss some of the most important attributes in this section.
 
-\section{Transit Fit Parameters}
+%% Transit fit parameters
+\subsection{Transit Fit Parameters}
 
 This paper presents exact analytic formulate for the eclipse of a star described by quadratic or nonlinear limb darkening. The Kepler Project derives transit parameters from best-fit parameters produced by this analytic formula. Some of the transit parameters are calculated directly; others are derived from the best-fit parameters. Limb-darkening coefficients are fixed and pre-calculated from host stellar properties.  
 
 
-\subsection{\emph{tce\_ror}: Ratio between planet radius and stellar radios}
-\emph{tce\_ror} attribute calculated by planet radius divided by its hosting the stellar radius. Both planet and stellar radius are in Eath-radii units. Plot \ref{plot:planet_star_radius_ratio} show the histogram of the \emph{tce\_ror} attribute in the TCE catalog (x-axis is in log scale and y-axis is in linear)
-
+\subsubsection{Ratio between planet radius and stellar radius (\emph{tce\_ror})}
+This attribute is calculated using planet radius divided by its hosting the stellar radius. Both planet and stellar radius are in Eath-radii units. Plot \ref{plot:planet_star_radius_ratio} show the histogram of the \emph{tce\_ror} attribute in the TCE catalog (x-axis is in log scale and y-axis is in linear)
 
 \begin{figure}[!h]
 \begin{center}
@@ -57,8 +71,8 @@ This paper presents exact analytic formulate for the eclipse of a star described
 \end{center}
 \end{figure}
 
-\subsection{\emph{tce\_duration}:  Transit Duration}
-tce\_duration: The duration of the observed transits. Duration is measured from the first contact between the planet and star until the last contact. The duration is measured by hours. The plot \ref{plot:transitduration} show the distribution of the transit duration of the TCE catalog. We can observe the most of the transit are fall under 10-hour duration.
+\subsubsection{Transit Duration (\emph{tce\_duration)}}
+Transit Duration is the duration of the observed transits. Duration is measured from the first contact between the planet and star until the last contact. The duration is measured by hours. The plot \ref{plot:transitduration} show the distribution of the transit duration of the TCE catalog. We can observe the most of the transit are fall under 10-hour duration.
 
 \begin{figure}[!h]
 \begin{center}
@@ -67,10 +81,10 @@ tce\_duration: The duration of the observed transits. Duration is measured from 
 \end{center}
 \end{figure}
 
-\subsection{\emph{tce\_impact}: Impact Parameter}
-tce\_impact: The sky-projected distance between the center of the stellar disc and the center of the planet disc at conjunction, normalized by the stellar radius.
+\subsubsection{Impact Parameter(\emph{tce\_impact})}
+Impact Parameter is the sky-projected distance between the center of the stellar disc and the center of the planet disc at conjunction, normalized by the stellar radius.
 
-\subsection{\emph{tce\_model\_snr}: Transit SNR}
+\subsubsection{Transit SNR (\emph{tce\_model\_snr})}
 Transit depth normalized by the mean uncertainty in the flux during the transits. Plot \ref{plot:transitsnr} show the distribution of the SNR. 
 
 \begin{figure}[!h]
@@ -80,11 +94,12 @@ Transit depth normalized by the mean uncertainty in the flux during the transits
 \end{center}
 \end{figure}
 
+%% Stellar Parameters 
 \subsection{Stellar Parameters}
 Best-fit transit parameters are normalized to the size of the host star. The size of the hosting star is determined by its radius. Physical planet parameters may be derived by scaling to the star's size and temperature. Stellar effective temperature, surface gravity, metallicity, radius, mass, and age should comprise a consistent set. This section describe and visualize some of the stellar parameters from the TCE catalog.
 
-\subsection{\emph{tce\_steff}: Stellar Effective Temperature (K)}
-Plot \ref{plot:stellartemp} show the photospheric temperature of the stars in the TCE catalog. Kepler mission target sun-like stars and the photospheric temperature of the sun is 5,775 K. If we plot the sun on the \ref{plot:stellartemp}, it will fall close to the apparently large number count that shows on the plot. This \ref{plot:stellartemp} show the TCE catalog stellar temperatures are falling between 3000K and 17000K 
+\subsubsection{Stellar Effective Temperature (K) (\emph{tce\_steff})}
+Plot \ref{plot:stellartemp} show the photospheric temperature of the stars in the TCE catalog. Kepler mission target sun-like stars and the photospheric temperature of the sun is 5,775 K. If we plot the sun on the \ref{plot:stellartemp}, it will fall close to the apparently large number count that shows on the plot. This plot \ref{plot:stellartemp} show the TCE catalog stellar temperatures are falling between 3000K and 17000K 
 
 
 \begin{figure}[!h]
@@ -94,7 +109,7 @@ Plot \ref{plot:stellartemp} show the photospheric temperature of the stars in th
 \end{center}
 \end{figure}
 
-\subsection{\emph{tce\_slogg}: Stellar Surface Gravity}
+\subsubsection{Stellar Surface Gravity (\emph{tce\_slogg})}
 The base-10 logarithm of the acceleration due to gravity at the surface of the star. The surface gravity of our sun is 274.0 cm/$s^{2}$ (4.44 log10(cm/$s^{2}$)). Plot \ref{plot:stellargravity} show the distribution of the TCE catalog stellar surface gravity. 
 
 \begin{figure}[!h]
@@ -104,14 +119,27 @@ The base-10 logarithm of the acceleration due to gravity at the surface of the s
 \end{center}
 \end{figure}
 
+\subsection{Light Curve Based Vetting Statistics}
+Kepler data pipeline performs detection tests using gap-filled flux time series. These time series usually build using multi-quarter data that observed by the spacecraft. In the process of combining these datasets, it removes edge effects around the data gaps and then combines the segments together. Gaps are filled by interpolating data segments.  TPS module of the pipeline estimates the Power Spectral Density of the flux tine series as a function of time. This generates coefficients for Single Event Statistics (SES) time series components. These can be interpreted as measurements fo the statistical significance of the presence of a transit of trial duration at each point in the time series. 
 
+\subsubsection{Single Event Statistics (SES)}
+The maximum calculated value of the SES. Maximum SES statistics for different TCEs from the same target differ because the most significant TCE is removed from the time series before repeating the test for further and weaker transit signals. 
+
+\subsubsection{Multiple Event Statistic (MES)}
+Multiple Event Statistic (MES) is the ratio of the detected signature's strength to the noise limit for a transit signature of the selected period and duration, or equivalently the SNR for the detection of the series of transits. This field contains the maximum calculated value of the MES.
+
+
+\section{Missing Attributes}
+In some circumstances, there are missing attributes in the dataset due to missing information in the stellar catalogs; the data validation fit fails to converge, or a processing timeout is reached. These missing attributes can be fill using reasonable methods such as mean, median, and in case of missing stellar attributes can be filled using sun's parameters. These various substitutions will be tested when training the network.
+
+
+\input{Chapter2/Chapter2_Algorithms_and_Techniques}
+% DONE
 %\todo{Data Exploration}
 %\todo{- Explain TCE Catalog in detail - show some samples, some of this already done}.
 %\todo{- Explain the attributes in the dataset - may be use a table with detail description, try to visualize some of the attributes}
 %\todo{- Missing data - from the paper, this is already done}
+% TODO
+
 %\todo{- remove the weak attributes}
 %\todo{- Explain the classification labels in the dataset - this is already done}
-%\todo{Algorithms and Techniques}
-%\todo{- Explain PCA indetail }
-%\todo{- Explain CNN in detail}
-%\todo{Benchmark - define the benchmark and thresholds - this is already done}

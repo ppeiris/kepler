@@ -6,21 +6,26 @@
 \BOOKMARK [1][-]{section.1.5}{Kepler Field of View \(FOV\)}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.6}{Kepler Pipeline}{chapter.1}% 7
 \BOOKMARK [1][-]{section.1.7}{KOI and TCE Attributes }{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.8}{Missing Attributes}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.9}{TCE Classification Labels}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.10}{The Problem statement}{chapter.1}% 11
-\BOOKMARK [1][-]{section.1.11}{Solution Statement}{chapter.1}% 12
-\BOOKMARK [0][-]{chapter.2}{Analysis}{}% 13
-\BOOKMARK [1][-]{section.2.1}{Threshold Crossing Event Catalog}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.2}{TCE Attributes}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.3}{Transit Fit Parameters}{chapter.2}% 16
-\BOOKMARK [2][-]{subsection.2.3.1}{tce\137ror: Ratio between planet radius and stellar radios}{section.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.3.2}{tce\137duration: Transit Duration}{section.2.3}% 18
-\BOOKMARK [2][-]{subsection.2.3.3}{tce\137impact: Impact Parameter}{section.2.3}% 19
-\BOOKMARK [2][-]{subsection.2.3.4}{tce\137model\137snr: Transit SNR}{section.2.3}% 20
-\BOOKMARK [2][-]{subsection.2.3.5}{Stellar Parameters}{section.2.3}% 21
-\BOOKMARK [2][-]{subsection.2.3.6}{tce\137steff: Stellar Effective Temperature \(K\)}{section.2.3}% 22
-\BOOKMARK [2][-]{subsection.2.3.7}{tce\137slogg: Stellar Surface Gravity}{section.2.3}% 23
-\BOOKMARK [0][-]{chapter.3}{Methodology}{}% 24
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 25
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 26
+\BOOKMARK [1][-]{section.1.8}{TCE Classification Labels}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.9}{The Problem statement}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.10}{Solution Statement}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{Analysis}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Threshold Crossing Event Catalog}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{TCE Attributes}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.1}{Transit Fit Parameters}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.2}{Stellar Parameters}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.3}{Light Curve Based Vetting Statistics}{section.2.2}% 17
+\BOOKMARK [1][-]{section.2.3}{Missing Attributes}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.4}{Principal Component Analysis}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.4.1}{Naive Basis}{section.2.4}% 20
+\BOOKMARK [2][-]{subsection.2.4.2}{Change of Basis}{section.2.4}% 21
+\BOOKMARK [2][-]{subsection.2.4.3}{Solving PCA using Eigenvalue Decomposistion}{section.2.4}% 22
+\BOOKMARK [1][-]{section.2.5}{Application of Artificial Neural Networks in Astrophysics}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.5.1}{Artificial Neural Networks}{section.2.5}% 24
+\BOOKMARK [2][-]{subsection.2.5.2}{Multi-layer Perceptrons}{section.2.5}% 25
+\BOOKMARK [2][-]{subsection.2.5.3}{Model Validation}{section.2.5}% 26
+\BOOKMARK [2][-]{subsection.2.5.4}{Benchmark Model}{section.2.5}% 27
+\BOOKMARK [0][-]{chapter.3}{Methodology}{}% 28
+\BOOKMARK [1][-]{section.3.1}{Apply PCA to TCE Catalog }{chapter.3}% 29
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 30
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 31
