@@ -26,6 +26,12 @@
 \BOOKMARK [2][-]{subsection.2.5.3}{Model Validation}{section.2.5}% 26
 \BOOKMARK [2][-]{subsection.2.5.4}{Benchmark Model}{section.2.5}% 27
 \BOOKMARK [0][-]{chapter.3}{Methodology}{}% 28
-\BOOKMARK [1][-]{section.3.1}{Apply PCA to TCE Catalog }{chapter.3}% 29
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 30
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 31
+\BOOKMARK [1][-]{section.3.1}{TCE Catalog data cleanup}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.2}{Apply PCA to TCE Catalog }{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.2.1}{Data Analysis}{section.3.2}% 31
+\BOOKMARK [1][-]{section.3.3}{Training and Testing Data}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.4}{Training the Neural Network}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.4.1}{Activation Function}{section.3.4}% 34
+\BOOKMARK [2][-]{subsection.3.4.2}{Learning Rate - }{section.3.4}% 35
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 36
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 37

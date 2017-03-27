@@ -129,6 +129,7 @@
 \newlabel{fig:an}{{2.11}{36}{Artificial Neuron}{figure.2.11}{}}
 \citation{Introduction_to_the_theory_of_neural_computation}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Multi-layer Perceptrons}{37}{subsection.2.5.2}}
+\newlabel{sec:mlp}{{2.5.2}{37}{Multi-layer Perceptrons}{subsection.2.5.2}{}}
 \newlabel{eq:error}{{2.10}{37}{Multi-layer Perceptrons}{equation.2.5.10}{}}
 \newlabel{eq:gd}{{2.11}{38}{Multi-layer Perceptrons}{equation.2.5.11}{}}
 \newlabel{eq:weightupdate}{{2.12}{38}{Multi-layer Perceptrons}{equation.2.5.12}{}}
@@ -152,37 +153,67 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {3}Methodology}{45}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Apply PCA to TCE Catalog }{46}{section.3.1}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{47}{chapter.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}TCE Catalog data cleanup}{45}{section.3.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Apply PCA to TCE Catalog }{46}{section.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Data Analysis}{46}{subsection.3.2.1}}
+\newlabel{eq:Pi}{{3.1}{47}{Data Analysis}{equation.3.2.1}{}}
+\newlabel{eq:Ci}{{3.2}{47}{Data Analysis}{equation.3.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Cumulative $\%$}}{47}{figure.3.1}}
+\newlabel{fig:pca_cumulative}{{3.1}{47}{Cumulative $\%$}{figure.3.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Eigenvalues, and the proportion of variation produced by the principal components (Only first 31 components are listed).}}{48}{table.3.1}}
+\newlabel{tbl:pca}{{3.1}{48}{Eigenvalues, and the proportion of variation produced by the principal components (Only first 31 components are listed)}{table.3.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Correlation between Principal Components and Variables}}{49}{table.3.2}}
+\newlabel{fig:pc_corr}{{3.2}{49}{Correlation between Principal Components and Variables}{table.3.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Training and Testing Data}{50}{section.3.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Training the Neural Network}{51}{section.3.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Activation Function}{51}{subsection.3.4.1}}
+\newlabel{eq:identity}{{3.3}{51}{Activation Function}{equation.3.4.3}{}}
+\newlabel{eq:logistic}{{3.4}{51}{Activation Function}{equation.3.4.4}{}}
+\citation{bishop2006pattern}
+\newlabel{eq:relu}{{3.5}{52}{Activation Function}{equation.3.4.5}{}}
+\newlabel{eq:tanh}{{3.6}{52}{Activation Function}{equation.3.4.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces \emph  {tanh} function}}{52}{figure.3.2}}
+\newlabel{fig:tanh}{{3.2}{52}{\emph {tanh} function}{figure.3.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Loss Function}{52}{section*.10}}
+\newlabel{eq:logloss}{{3.7}{52}{Loss Function}{equation.3.4.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Loss function with some learning rate methods. x-axis: number of iterations. y-axis: loss function value}}{53}{figure.3.3}}
+\newlabel{fig:loss_functions}{{3.3}{53}{Loss function with some learning rate methods. x-axis: number of iterations. y-axis: loss function value}{figure.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Learning Rate - $\eta $}{53}{subsection.3.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Loss function with constant learning rate with different activation methods. x-axis: number of iterations. y-axis: loss function value}}{54}{figure.3.4}}
+\newlabel{fig:loss_functions_2}{{3.4}{54}{Loss function with constant learning rate with different activation methods. x-axis: number of iterations. y-axis: loss function value}{figure.3.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Loss function with constant adaptive learning rate with \emph  {tanh} activation method converge the network. x-axis: number of iterations. y-axis: loss function value}}{55}{figure.3.5}}
+\newlabel{fig:loss_functions_3}{{3.5}{55}{Loss function with constant adaptive learning rate with \emph {tanh} activation method converge the network. x-axis: number of iterations. y-axis: loss function value}{figure.3.5}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Results}{56}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \bibdata{Reference/ref}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{48}{chapter.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{57}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \bibcite{2016Natur.536..437A}{1}
-\bibcite{Borucki977}{2}
-\bibcite{2000ApJ...529L..45C}{3}
-\bibcite{2011yCat..35290075C}{4}
-\bibcite{2011MNRAS.414.2602D}{5}
-\bibcite{feigelson2012}{6}
-\bibcite{Gardner2006}{7}
-\bibcite{hamey1991benchmarking}{8}
-\bibcite{Introduction_to_the_theory_of_neural_computation}{9}
-\bibcite{2014PASP..126..398H}{10}
-\bibcite{2010ApJ...713L..87J}{11}
-\bibcite{2010ApJ...713L..79K}{12}
-\bibcite{2014ApJ...787L..29K}{13}
-\bibcite{maier1995use}{14}
-\bibcite{2002ApJ...580L.171M}{15}
-\bibcite{2015ApJ...806....6M}{16}
-\bibcite{mcculloch1943logical}{17}
-\bibcite{2012PASP..124.1073P}{18}
-\bibcite{2014ExA....38..249R}{19}
-\bibcite{2014SPIE.9143E..20R}{20}
-\bibcite{Rumelhart:1986:LIR:104279.104293}{21}
-\bibcite{2012PASP..124.1000S}{22}
-\bibcite{teh1997prediction}{23}
-\bibcite{2015ApJ...800...99T}{24}
-\bibcite{voelkel2001johannes}{25}
-\bibcite{2002ApJ...580..494Y}{26}
+\bibcite{bishop2006pattern}{2}
+\bibcite{Borucki977}{3}
+\bibcite{2000ApJ...529L..45C}{4}
+\bibcite{2011yCat..35290075C}{5}
+\bibcite{2011MNRAS.414.2602D}{6}
+\bibcite{feigelson2012}{7}
+\bibcite{Gardner2006}{8}
+\bibcite{hamey1991benchmarking}{9}
+\bibcite{Introduction_to_the_theory_of_neural_computation}{10}
+\bibcite{2014PASP..126..398H}{11}
+\bibcite{2010ApJ...713L..87J}{12}
+\bibcite{2010ApJ...713L..79K}{13}
+\bibcite{2014ApJ...787L..29K}{14}
+\bibcite{maier1995use}{15}
+\bibcite{2002ApJ...580L.171M}{16}
+\bibcite{2015ApJ...806....6M}{17}
+\bibcite{mcculloch1943logical}{18}
+\bibcite{2012PASP..124.1073P}{19}
+\bibcite{2014ExA....38..249R}{20}
+\bibcite{2014SPIE.9143E..20R}{21}
+\bibcite{Rumelhart:1986:LIR:104279.104293}{22}
+\bibcite{2012PASP..124.1000S}{23}
+\bibcite{teh1997prediction}{24}
+\bibcite{2015ApJ...800...99T}{25}
+\bibcite{voelkel2001johannes}{26}
+\bibcite{2002ApJ...580..494Y}{27}

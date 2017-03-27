@@ -34,6 +34,13 @@
 \contentsline {subsection}{\numberline {2.5.3}Model Validation}{42}{subsection.2.5.3}
 \contentsline {subsection}{\numberline {2.5.4}Benchmark Model}{43}{subsection.2.5.4}
 \contentsline {chapter}{\numberline {3}Methodology}{45}{chapter.3}
-\contentsline {section}{\numberline {3.1}Apply PCA to TCE Catalog }{46}{section.3.1}
-\contentsline {chapter}{\numberline {4}Results}{47}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclusion}{48}{chapter.5}
+\contentsline {section}{\numberline {3.1}TCE Catalog data cleanup}{45}{section.3.1}
+\contentsline {section}{\numberline {3.2}Apply PCA to TCE Catalog }{46}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Data Analysis}{46}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Training and Testing Data}{50}{section.3.3}
+\contentsline {section}{\numberline {3.4}Training the Neural Network}{51}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Activation Function}{51}{subsection.3.4.1}
+\contentsline {subsubsection}{Loss Function}{52}{section*.10}
+\contentsline {subsection}{\numberline {3.4.2}Learning Rate - $\eta $}{53}{subsection.3.4.2}
+\contentsline {chapter}{\numberline {4}Results}{56}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclusion}{57}{chapter.5}
