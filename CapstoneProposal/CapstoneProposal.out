@@ -1,0 +1,16 @@
+\BOOKMARK [0][-]{chapter.1}{Domain Background}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Scentific Goals and Objectives of the Kepler Mission}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Habitable Zone}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{The Transit Method of Detecting Extrasolar Planets}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Project Proporsal and Motivation}{chapter.1}% 5
+\BOOKMARK [0][-]{chapter.2}{Problem Statement}{}% 6
+\BOOKMARK [0][-]{chapter.3}{Datasets and Inputs}{}% 7
+\BOOKMARK [1][-]{section.3.1}{Kepler Pipeline}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.2}{KOI and TCE Sttributes }{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.3}{Some Important Attributes}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.4}{Missing Attributes}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.5}{Classification Labels}{chapter.3}% 12
+\BOOKMARK [0][-]{chapter.4}{Solution Statement}{}% 13
+\BOOKMARK [0][-]{chapter.5}{Benchmark Model}{}% 14
+\BOOKMARK [0][-]{chapter.6}{Evaluation Metrics}{}% 15
+\BOOKMARK [0][-]{chapter.7}{Project Design}{}% 16

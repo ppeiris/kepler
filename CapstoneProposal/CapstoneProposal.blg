@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/dev)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: CapstoneProposal.aux
+The style file: plain.bst
+Database file #1: Reference/ref.bib
+Repeated entry---line 316 of file Reference/ref.bib
+ : @article{2010ApJ...713L..87J
+ :                             ,
+I'm skipping whatever remains of this entry
+You've used 18 entries,
+            2118 wiz_defined-function locations,
+            625 strings with 15110 characters,
+and the built_in function-call counts, 18816 in all, are:
+= -- 1422
+> -- 2317
+< -- 3
++ -- 924
+- -- 906
+* -- 2097
+:= -- 3478
+add.period$ -- 55
+call.type$ -- 18
+change.case$ -- 506
+chr.to.int$ -- 0
+cite$ -- 18
+duplicate$ -- 229
+empty$ -- 480
+format.name$ -- 906
+if$ -- 3333
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 19
+newline$ -- 93
+num.names$ -- 36
+pop$ -- 486
+preamble$ -- 1
+purify$ -- 489
+quote$ -- 0
+skip$ -- 161
+stack$ -- 0
+substring$ -- 425
+swap$ -- 46
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 70
+warning$ -- 0
+while$ -- 55
+width$ -- 20
+write$ -- 202
+(There was 1 error message)

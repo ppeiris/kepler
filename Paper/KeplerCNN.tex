@@ -1,0 +1,111 @@
+% !TEX TS-program = latex
+\documentclass[a4paper,12pt]{report}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+\usepackage{amsmath}
+\usepackage[mathscr]{eucal}
+\usepackage{amssymb}
+\usepackage{indentfirst}
+\usepackage{latexsym}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{enumerate}
+\usepackage{pdfpages}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{epsfig}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{dcolumn}
+
+\usepackage{float}
+\usepackage{xspace}
+
+\newcommand{\todo}[1]
+{
+    {\color{red}$\bigstar$~\textsf{#1}\\}
+}
+
+\newcommand{\todosub}[1]
+{
+    {\color{blue}$\triangleright$~\textsf{#1}\\}
+}
+
+\newcommand{\tododone}[1]
+{
+    {\color{red}$\checkmark$~\textsf{#1}\\}
+}
+
+\newcommand{\EditOne}[1]
+{
+    {\color{blue}{#1}}
+}
+
+
+\newcommand{\K}{{\tt Kepler}}
+
+
+\bibliographystyle{plain}
+\textwidth=14.945cm
+\oddsidemargin=0.5cm
+\evensidemargin=0.5cm
+
+\begin{document}
+\doublespacing
+
+\begin{titlepage}
+\vspace*{2cm}
+\noindent
+\begin{flushleft}
+	\setlength{\baselineskip}{2\baselineskip}
+	{{\Huge \bf Automatic Classification of Kepler Planetary Transit Candidates Using Multilayred Neural Networks}}
+\end{flushleft}
+
+
+\vspace{1cm}
+\vspace{\fill}
+\vspace{1.3cm}
+\begin{tabbing}
+mmmmmmmmmmmmmmmmm\= \kill
+\>Prabath Peiris\\
+\>Capstone Project\\
+\>Machine Learning Nanodegree\\
+\>Udacity\\
+\> \\
+\end{tabbing}
+\end{titlepage}
+
+\thispagestyle{empty}
+\newlength{\origpar}
+\setlength{\origpar}{\parindent}
+\setlength{\parindent}{0pt}
+%\input{Abstract/abstract}
+\setlength{\parindent}{\origpar}
+\thispagestyle{empty}
+\tableofcontents
+\clearpage
+
+\renewcommand {\baselinestretch} {1.0}
+\pagebreak
+%\pagenumbering{arabic}
+
+
+\input{Chapter1/Chapter1_Introduction}
+\input{Chapter2/Chapter2_Analysis}
+\input{Chapter3/Chapter3_Methodology}
+\input{Chapter4/Chapter4_Results}
+\input{Chapter5/Chapter5_Conclusion}
+
+%\input{Chapter2/Chapter2_Problem_Statement}
+%\input{Chapter3/Chapter3_Datasets_and_Inputs}
+%\input{Chapter4/Chapter4_Solution_Statement}
+%\input{Chapter5/Chapter5_Benchmark_Model}
+%\input{Chapter6/Chapter6_Evaluation_Metrix.tex}
+%\input{Chapter7/Chapter7_Project_Design.tex}
+
+\bibliography{Reference/ref}
+\end{document}
+
+
+
