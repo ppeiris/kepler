@@ -34,4 +34,5 @@
 \BOOKMARK [2][-]{subsection.3.4.1}{Activation Function}{section.3.4}% 34
 \BOOKMARK [2][-]{subsection.3.4.2}{Learning Rate - }{section.3.4}% 35
 \BOOKMARK [0][-]{chapter.4}{Results}{}% 36
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 37
+\BOOKMARK [1][-]{section.4.1}{Confusion Matrix}{chapter.4}% 37
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 38

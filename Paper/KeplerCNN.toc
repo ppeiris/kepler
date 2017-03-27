@@ -43,4 +43,5 @@
 \contentsline {subsubsection}{Loss Function}{52}{section*.10}
 \contentsline {subsection}{\numberline {3.4.2}Learning Rate - $\eta $}{53}{subsection.3.4.2}
 \contentsline {chapter}{\numberline {4}Results}{56}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conclusion}{57}{chapter.5}
+\contentsline {section}{\numberline {4.1}Confusion Matrix}{56}{section.4.1}
+\contentsline {chapter}{\numberline {5}Conclusion}{60}{chapter.5}
