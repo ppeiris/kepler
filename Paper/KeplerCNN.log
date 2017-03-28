@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.12.29)  27 MAR 2017 18:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.12.29)  28 MAR 2017 03:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -481,7 +481,7 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 ...cipal Component Analysis}{29}{section.2.4}
+l.27 ...cipal Component Analysis}{28}{section.2.4}
                                                    [1
 
 ])
@@ -502,7 +502,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
  [5]
-<img/navigatorprogram.png, id=240, 959.33629pt x 832.06433pt>
+<img/navigatorprogram.png, id=234, 959.33629pt x 832.06433pt>
 File: img/navigatorprogram.png Graphic file (type png)
 
 <use img/navigatorprogram.png>
@@ -521,9 +521,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.44 
+l.49 
       <./img/navigatorprogram.png>] [8]
-<img/kccd.png, id=266, 718.685pt x 417.56pt>
+<img/kccd.png, id=259, 718.685pt x 417.56pt>
 File: img/kccd.png Graphic file (type png)
  <use img/kccd.png>
 Package pdftex.def Info: img/kccd.png used on input line 56.
@@ -534,13 +534,13 @@ Package pdftex.def Info: img/kccd.png used on input line 56.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.65 
-      <./img/kccd.png>] <img/lightcurve.jpg, id=277, 250.7769pt x 106.7187pt>
+      <./img/kccd.png>] <img/lightcurve.jpg, id=270, 250.7769pt x 106.7187pt>
 File: img/lightcurve.jpg Graphic file (type jpg)
 
 <use img/lightcurve.jpg>
 Package pdftex.def Info: img/lightcurve.jpg used on input line 68.
 (pdftex.def)             Requested size: 414.3982pt x 176.36646pt.
- <img/k20c.jpg, id=278, 441.65pt x 301.125pt>
+ <img/k20c.jpg, id=271, 441.65pt x 301.125pt>
 File: img/k20c.jpg Graphic file (type jpg)
 
 <use img/k20c.jpg>
@@ -555,23 +555,23 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.82 
-      <./img/lightcurve.jpg>] <img/FOV2.png, id=288, 50.05367pt x 31.74527pt>
+l.84 \section
+             {Kepler Field of View (FOV)} <./img/lightcurve.jpg>]
+<img/FOV2.png, id=282, 50.05367pt x 31.74527pt>
 File: img/FOV2.png Graphic file (type png)
-
-<use img/FOV2.png>
+ <use img/FOV2.png>
 Package pdftex.def Info: img/FOV2.png used on input line 88.
 (pdftex.def)             Requested size: 325.6018pt x 206.5965pt.
- <img/FOV1.png, id=289, 324.21124pt x 306.14375pt>
-File: img/FOV1.png Graphic file (type png)
 
-<use img/FOV1.png>
+<img/FOV1.png, id=283, 324.21124pt x 306.14375pt>
+File: img/FOV1.png Graphic file (type png)
+ <use img/FOV1.png>
 Package pdftex.def Info: img/FOV1.png used on input line 94.
 (pdftex.def)             Requested size: 199.85703pt x 188.72339pt.
- <img/FOV3.png, id=290, 568.1225pt x 708.6475pt>
-File: img/FOV3.png Graphic file (type png)
 
-<use img/FOV3.png>
+<img/FOV3.png, id=284, 568.1225pt x 708.6475pt>
+File: img/FOV3.png Graphic file (type png)
+ <use img/FOV3.png>
 Package pdftex.def Info: img/FOV3.png used on input line 98.
 (pdftex.def)             Requested size: 212.61331pt x 265.2015pt.
  [11pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
@@ -580,16 +580,17 @@ Package pdftex.def Info: img/FOV3.png used on input line 98.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.102 
-       <./img/k20c.jpg>] [12pdfTeX warning (ext4): destination with the same id
-entifier (name{figure.1.5}) has been already used, duplicate ignored
+       <./img/k20c.jpg>] (./Chapter1/Ch1_Datasets_and_Inputs.tex [12pdfTeX warn
+ing (ext4): destination with the same identifier (name{figure.1.5}) has been al
+ready used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.102 
-       <./img/FOV2.png>] (./Chapter1/Ch1_Datasets_and_Inputs.tex
-<img/kpipeline.jpg, id=309, 48.18pt x 32.40105pt>
+l.5 
+     <./img/FOV2.png>] <img/kpipeline.jpg, id=304, 48.18pt x 32.40105pt>
 File: img/kpipeline.jpg Graphic file (type jpg)
- <use img/kpipeline.jpg>
+
+<use img/kpipeline.jpg>
 Package pdftex.def Info: img/kpipeline.jpg used on input line 8.
 (pdftex.def)             Requested size: 296.0pt x 199.1574pt.
 
@@ -614,7 +615,7 @@ nored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.16 
+l.18 
       <./img/kpipeline.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 32--32
 [][][]$\OT1/cmtt/m/n/10 http : / / exoplanetarchive . ipac . caltech . edu / cg
@@ -627,9 +628,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--33
 i-[]bin / TblView / nph-[]tblView ? app =
  []
 
-[15] [16]) [17]) (./Chapter2/Chapter2_Analysis.tex [18]
+[15] [16])) (./Chapter2/Chapter2_Analysis.tex [17]
 Chapter 2.
-<img/TCE_lightcurves.png, id=374, 783.92876pt x 566.115pt>
+<img/TCE_lightcurves.png, id=362, 783.92876pt x 566.115pt>
 File: img/TCE_lightcurves.png Graphic file (type png)
 
 <use img/TCE_lightcurves.png>
@@ -639,7 +640,7 @@ Package pdftex.def Info: img/TCE_lightcurves.png used on input line 26.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/TCECatalog.png, id=375, 1102.1175pt x 563.10374pt>
+<img/TCECatalog.png, id=363, 1102.1175pt x 563.10374pt>
 File: img/TCECatalog.png Graphic file (type png)
 
 <use img/TCECatalog.png>
@@ -659,9 +660,9 @@ oTbls & config = q1 _ q12 _
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19
+[18
 
-] <img/tceoptions.png, id=387, 1665.22125pt x 1284.8pt>
+] <img/tceoptions.png, id=376, 1665.22125pt x 1284.8pt>
 File: img/tceoptions.png Graphic file (type png)
 
 <use img/tceoptions.png>
@@ -672,7 +673,7 @@ Overfull \hbox (48.37517pt too wide) in paragraph at lines 48--49
  [] 
  []
 
-[20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -682,13 +683,13 @@ l.51 \end{figure}
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.62 
-      <./img/TCECatalog.png>] [22pdfTeX warning (ext4): destination with the sa
+      <./img/TCECatalog.png>] [21pdfTeX warning (ext4): destination with the sa
 me identifier (name{figure.2.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -696,47 +697,47 @@ me identifier (name{figure.2.3}) has been already used, duplicate ignored
 l.64 \subsubsection
                    {Ratio between planet radius and stellar radius (\emph{tc...
  <./img/tceoptions.png>]
-<img/planet_star_radius_ratio.png, id=408, 2719.15875pt x 3011.25pt>
+<img/planet_star_radius_ratio.png, id=397, 2719.15875pt x 3011.25pt>
 File: img/planet_star_radius_ratio.png Graphic file (type png)
 
 <use img/planet_star_radius_ratio.png>
 Package pdftex.def Info: img/planet_star_radius_ratio.png used on input line 69
 .
 (pdftex.def)             Requested size: 296.0pt x 327.79243pt.
- [23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.76 
       <./img/planet_star_radius_ratio.png (PNG copy)>]
-<img/transitduration.png, id=417, 2845.63126pt x 3011.25pt>
+<img/transitduration.png, id=406, 2845.63126pt x 3011.25pt>
 File: img/transitduration.png Graphic file (type png)
 
 <use img/transitduration.png>
 Package pdftex.def Info: img/transitduration.png used on input line 79.
 (pdftex.def)             Requested size: 296.0pt x 313.22694pt.
- [24pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.86 
       <./img/transitduration.png (PNG copy)>]
-<img/transitsnr.png, id=426, 2845.63126pt x 3011.25pt>
+<img/transitsnr.png, id=414, 2845.63126pt x 3011.25pt>
 File: img/transitsnr.png Graphic file (type png)
 
 <use img/transitsnr.png>
 Package pdftex.def Info: img/transitsnr.png used on input line 92.
 (pdftex.def)             Requested size: 296.0pt x 313.22694pt.
- [25pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [24pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.100 
        <./img/transitsnr.png (PNG copy)>]
-<img/stellartemp.png, id=437, 2845.63126pt x 3011.25pt>
+<img/stellartemp.png, id=426, 2845.63126pt x 3011.25pt>
 File: img/stellartemp.png Graphic file (type png)
 
 <use img/stellartemp.png>
@@ -746,7 +747,7 @@ Package pdftex.def Info: img/stellartemp.png used on input line 107.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/stellargravity.png, id=439, 2845.63126pt x 3011.25pt>
+<img/stellargravity.png, id=428, 2845.63126pt x 3011.25pt>
 File: img/stellargravity.png Graphic file (type png)
 
 <use img/stellargravity.png>
@@ -756,13 +757,13 @@ Package pdftex.def Info: img/stellargravity.png used on input line 117.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26] [27pdfTeX warning (ext4): destination with the same identifier (name{figur
+[25] [26pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.2.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.130 
-       <./img/stellartemp.png (PNG copy)>] [28pdfTeX warning (ext4): destinatio
+       <./img/stellartemp.png (PNG copy)>] [27pdfTeX warning (ext4): destinatio
 n with the same identifier (name{figure.2.8}) has been already used, duplicate 
 ignored
 
@@ -771,19 +772,19 @@ ignored
 l.134 
        <./img/stellargravity.png (PNG copy)>]
 (./Chapter2/Chapter2_Algorithms_and_Techniques.tex
-<img/3D.png, id=459, 413.545pt x 381.425pt>
+<img/3D.png, id=448, 413.545pt x 381.425pt>
 File: img/3D.png Graphic file (type png)
  <use img/3D.png>
 Package pdftex.def Info: img/3D.png used on input line 15.
 (pdftex.def)             Requested size: 236.79639pt x 218.40973pt.
- [29] [30pdfTeX warning (ext4): destination with the same identifier (name{figu
+ [28] [29pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.2.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.46 
-      <./img/3D.png>] [31] [32] [33]
-<img/ann.png, id=501, 305.34074pt x 224.037pt>
+      <./img/3D.png>] [30] [31] [32]
+<img/ann.png, id=490, 305.34074pt x 224.037pt>
 File: img/ann.png Graphic file (type png)
  <use img/ann.png>
 Package pdftex.def Info: img/ann.png used on input line 136.
@@ -792,7 +793,7 @@ Package pdftex.def Info: img/ann.png used on input line 136.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/an.png, id=502, 325.66669pt x 270.5608pt>
+<img/an.png, id=491, 325.66669pt x 270.5608pt>
 File: img/an.png Graphic file (type png)
  <use img/an.png>
 Package pdftex.def Info: img/an.png used on input line 144.
@@ -801,21 +802,21 @@ Package pdftex.def Info: img/an.png used on input line 144.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[34] [35pdfTeX warning (ext4): destination with the same identifier (name{figur
+[33] [34pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.2.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.169 \item T
              his process will be repeated while adjusting the weights to pro...
- <./img/ann.png>] [36pdfTeX warning (ext4): destination with the same identifie
+ <./img/ann.png>] [35pdfTeX warning (ext4): destination with the same identifie
 r (name{figure.2.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.174 
-       <./img/an.png>] [37] [38]
-<img/globalmin.png, id=551, 266.94731pt x 176.15813pt>
+       <./img/an.png>] [36] [37]
+<img/globalmin.png, id=540, 266.94731pt x 176.15813pt>
 File: img/globalmin.png Graphic file (type png)
  <use img/globalmin.png>
 Package pdftex.def Info: img/globalmin.png used on input line 216.
@@ -824,14 +825,14 @@ Package pdftex.def Info: img/globalmin.png used on input line 216.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[39] [40pdfTeX warning (ext4): destination with the same identifier (name{figur
+[38] [39pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.2.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.226 
-       <./img/globalmin.png>] [41] [42]
-<img/benchmark.png, id=588, 837.1275pt x 641.39626pt>
+       <./img/globalmin.png>] [40] [41]
+<img/benchmark.png, id=576, 837.1275pt x 641.39626pt>
 File: img/benchmark.png Graphic file (type png)
  <use img/benchmark.png>
 Package pdftex.def Info: img/benchmark.png used on input line 269.
@@ -840,7 +841,7 @@ Package pdftex.def Info: img/benchmark.png used on input line 269.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[43])) (./Chapter3/Chapter3_Methodology.tex [44pdfTeX warning (ext4): destinati
+[42])) (./Chapter3/Chapter3_Methodology.tex [43pdfTeX warning (ext4): destinati
 on with the same identifier (name{figure.2.13}) has been already used, duplicat
 e ignored
 
@@ -855,20 +856,20 @@ Overfull \hbox (9.12718pt too wide) in paragraph at lines 10--11
  clas-si-fy-ing the ephemerides.
  []
 
-[45
+[44
 
-] [46]
+] [45]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 37.
 
-<img/pca_cumulative.png, id=620, 397.485pt x 266.9975pt>
+<img/pca_cumulative.png, id=609, 397.485pt x 266.9975pt>
 File: img/pca_cumulative.png Graphic file (type png)
 
 <use img/pca_cumulative.png>
 Package pdftex.def Info: img/pca_cumulative.png used on input line 80.
 (pdftex.def)             Requested size: 236.79639pt x 159.06306pt.
- <img/pc_corr.png, id=621, 971.63pt x 1098.1025pt>
+ <img/pc_corr.png, id=610, 971.63pt x 1098.1025pt>
 File: img/pc_corr.png Graphic file (type png)
 
 <use img/pc_corr.png>
@@ -879,32 +880,32 @@ Overfull \hbox (18.77336pt too wide) in paragraph at lines 87--88
  [] 
  []
 
-[47pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
+[46pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.94 
-      <./img/pca_cumulative.png>] [48pdfTeX warning (ext4): destination with th
+      <./img/pca_cumulative.png>] [47pdfTeX warning (ext4): destination with th
 e same identifier (name{table.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.94 
-     ] [49pdfTeX warning (ext4): destination with the same identifier (name{tab
+     ] [48pdfTeX warning (ext4): destination with the same identifier (name{tab
 le.3.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.94 
-      <./img/pc_corr.png>] [50] [51]
-<img/tanh.png, id=657, 361.35pt x 233.87375pt>
+      <./img/pc_corr.png>] [49] [50]
+<img/tanh.png, id=646, 361.35pt x 233.87375pt>
 File: img/tanh.png Graphic file (type png)
  <use img/tanh.png>
 Package pdftex.def Info: img/tanh.png used on input line 132.
 (pdftex.def)             Requested size: 177.6018pt x 114.94885pt.
 
-<img/activation_functions_1.png, id=661, 578.16pt x 433.62pt>
+<img/activation_functions_1.png, id=650, 578.16pt x 433.62pt>
 File: img/activation_functions_1.png Graphic file (type png)
 
 <use img/activation_functions_1.png>
@@ -927,20 +928,20 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 159.
 
-[52pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
+[51pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.161 
-       <./img/tanh.png>] [53pdfTeX warning (ext4): destination with the same id
+       <./img/tanh.png>] [52pdfTeX warning (ext4): destination with the same id
 entifier (name{figure.3.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.166 \end{itemize}
                     <./img/activation_functions_1.png>]
-<img/constant_learning_rate.png, id=682, 578.16pt x 433.62pt>
+<img/constant_learning_rate.png, id=671, 578.16pt x 433.62pt>
 File: img/constant_learning_rate.png Graphic file (type png)
 
 <use img/constant_learning_rate.png>
@@ -948,7 +949,7 @@ Package pdftex.def Info: img/constant_learning_rate.png used on input line 172.
 
 (pdftex.def)             Requested size: 296.0pt x 221.9968pt.
 
-<img/constant_learning_rate_final.png, id=683, 578.16pt x 433.62pt>
+<img/constant_learning_rate_final.png, id=672, 578.16pt x 433.62pt>
 File: img/constant_learning_rate_final.png Graphic file (type png)
 
 <use img/constant_learning_rate_final.png>
@@ -959,14 +960,14 @@ e 179.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[54pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4
+[53pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.185 
        <./img/constant_learning_rate.png>]) (./Chapter4/Chapter4_Results.tex
-[55pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5
+[54pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -974,39 +975,59 @@ l.185
 l.1 \chapter
             {Results} <./img/constant_learning_rate_final.png>]
 Chapter 4.
-[56
-
-] <img/confusion_matrix_bad.png, id=704, 578.16pt x 433.62pt>
+<img/confusion_matrix_bad.png, id=689, 578.16pt x 433.62pt>
 File: img/confusion_matrix_bad.png Graphic file (type png)
 
 <use img/confusion_matrix_bad.png>
-Package pdftex.def Info: img/confusion_matrix_bad.png used on input line 15.
+Package pdftex.def Info: img/confusion_matrix_bad.png used on input line 14.
 (pdftex.def)             Requested size: 296.0pt x 221.9968pt.
- [57pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
-1}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.25 \end{equation}
-                    <./img/confusion_matrix_bad.png>]
-<img/confusion_matrix_good.png, id=714, 578.16pt x 433.62pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[55
+
+] <img/confusion_matrix_good.png, id=698, 578.16pt x 433.62pt>
 File: img/confusion_matrix_good.png Graphic file (type png)
 
 <use img/confusion_matrix_good.png>
-Package pdftex.def Info: img/confusion_matrix_good.png used on input line 31.
+Package pdftex.def Info: img/confusion_matrix_good.png used on input line 30.
 (pdftex.def)             Requested size: 296.0pt x 221.9968pt.
-) (./Chapter5/Chapter5_Conclusion.tex
-[58pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[56pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1 \chapter
-            {Conclusion} <./img/confusion_matrix_good.png>] [59]
-Chapter 5.
-) (./KeplerCNN.bbl [60
+l.37 
+      <./img/confusion_matrix_bad.png>]
+<img/randomforest_confmat.png, id=706, 529.98pt x 123.46124pt>
+File: img/randomforest_confmat.png Graphic file (type png)
 
-] [61
+<use img/randomforest_confmat.png>
+Package pdftex.def Info: img/randomforest_confmat.png used on input line 40.
+(pdftex.def)             Requested size: 296.0pt x 68.95508pt.
+ [57pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.46 
+     pdfTeX warning (ext4): destination with the same identifier (name{table.4.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.46 
+      <./img/confusion_matrix_good.png> <./img/randomforest_confmat.png>])
+(./Chapter5/Chapter5_Conclusion.tex [58]
+Chapter 5.
+[59
+
+]) [60] (./KeplerCNN.bbl [61] [62
 
 ]
 Underfull \hbox (badness 1622) in paragraph at lines 67--75
@@ -1014,23 +1035,23 @@ Underfull \hbox (badness 1622) in paragraph at lines 67--75
 n,
  []
 
-[62] [63] [64] [65] [66])
+[63] [64] [65] [66] [67])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
- [67]
+ [68]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
  (./KeplerCNN.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `KeplerCNN.out' has not changed.
-(rerunfilecheck)             Checksum: F8FAC38717F4DB8BEDE9D262E9042E3A;2634.
+(rerunfilecheck)             Checksum: F3B1AB745C3627F00EC27A9365B9995A;2571.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 8124 strings out of 495003
- 117208 string characters out of 6181404
- 212935 words of memory out of 5000000
- 10965 multiletter control sequences out of 15000+600000
- 15447 words of font info for 64 fonts, out of 8000000 for 9000
+ 8128 strings out of 495003
+ 117356 string characters out of 6181404
+ 213016 words of memory out of 5000000
+ 10968 multiletter control sequences out of 15000+600000
+ 15140 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  37i,9n,39p,1629b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exi
@@ -1057,17 +1078,15 @@ t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
-12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on KeplerCNN.pdf (68 pages, 5299675 bytes).
+/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on KeplerCNN.pdf (69 pages, 5298250 bytes).
 PDF statistics:
- 863 PDF objects out of 1000 (max. 8388607)
+ 864 PDF objects out of 1000 (max. 8388607)
  715 compressed objects within 8 object streams
- 204 named destinations out of 1000 (max. 500000)
- 450 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 205 named destinations out of 1000 (max. 500000)
+ 447 words of extra memory for PDF output out of 10000 (max. 10000000)
 

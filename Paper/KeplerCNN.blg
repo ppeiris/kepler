@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/dev)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: KeplerCNN.aux
+The style file: plain.bst
+Database file #1: Reference/ref.bib
+Repeated entry---line 331 of file Reference/ref.bib
+ : @article{2010ApJ...713L..87J
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 472 of file Reference/ref.bib
+ : @article{2014PASP..126..398H
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 569 of file Reference/ref.bib
+ : @article{2015ApJ...806....6M
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--empty school in maier1995use
+Warning--empty booktitle in Rumelhart:1986:LIR:104279.104293
+You've used 27 entries,
+            2118 wiz_defined-function locations,
+            685 strings with 17111 characters,
+and the built_in function-call counts, 22315 in all, are:
+= -- 1752
+> -- 2547
+< -- 6
++ -- 1017
+- -- 988
+* -- 2381
+:= -- 4083
+add.period$ -- 84
+call.type$ -- 27
+change.case$ -- 571
+chr.to.int$ -- 0
+cite$ -- 29
+duplicate$ -- 341
+empty$ -- 702
+format.name$ -- 988
+if$ -- 4029
+int.to.chr$ -- 0
+int.to.str$ -- 27
+missing$ -- 29
+newline$ -- 138
+num.names$ -- 54
+pop$ -- 551
+preamble$ -- 1
+purify$ -- 548
+quote$ -- 0
+skip$ -- 236
+stack$ -- 0
+substring$ -- 595
+swap$ -- 65
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 102
+warning$ -- 2
+while$ -- 85
+width$ -- 29
+write$ -- 302
+(There were 3 error messages)
